@@ -9,6 +9,9 @@ from utils import *
 
 from openai import OpenAI
 
+#comfyUI API的调用 / comfyUI API call
+import comfyUIAPI
+comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
 
 ##### temp model settings
 models = ["gpt-4o-2024-05-13", "gpt-4o-2024-08-06", "gpt-4o-2024-11-20", "gpt-4o-mini-2024-07-18"]
@@ -60,8 +63,13 @@ def server(input, output, session):
 
         # Generate res with base gpt model
         ###################################################
-        ### change to comfy ui pipline API
-        _,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, current_conversation["messages"])
+        ### changed to comfy ui pipline API
+        #_,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, current_conversation["messages"])
+        agent_res_msg = comfyAPI.call(
+            model_name="original_api",
+            messages=current_conversation["messages"],
+            max_tokens=150,
+        )
         await chat.append_message(agent_res_msg)
         current_conversation['messages'].append({'role': 'assistant', 'content': agent_res_msg})
         last_interaction_time=time.time()
