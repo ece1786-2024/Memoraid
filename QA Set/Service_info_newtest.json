@@ -1,0 +1,66 @@
+{
+    "facility": [
+        {
+            "id": "facility_1",
+            "name": "Library",
+            "location": "First Floor, North Wing",
+            "notes": "Quiet zone; open from 8:00 AM to 8:00 PM"
+        },
+        {
+            "id": "facility_2",
+            "name": "Gymnasium",
+            "location": "Second Floor, West Wing",
+            "notes": "Room number is W-210; equipment includes treadmills, bikes, and weights"
+        },
+        {
+            "id": "facility_3",
+            "name": "Cafeteria",
+            "location": "Ground Floor, Central Area",
+            "notes": "Offers meals and snacks; open from 6:30 AM to 8:30 PM"
+        },
+        {
+            "id": "facility_4",
+            "name": "Swimming Pool",
+            "location": "Ground Floor, South Wing",
+            "notes": "Open from 9:00 AM to 6:00 PM; lifeguard on duty"
+        },
+        {
+            "id": "facility_5",
+            "name": "Art Studio",
+            "location": "Third Floor, East Wing",
+            "notes": "Room number is E-305; hosts art classes twice a week"
+        }
+    ],
+    "medical_history": [
+        {
+            "id": "condition_1",
+            "name": "Alzheimer's Disease",
+            "diagnosed_on": "2020-08-15",
+            "notes": "Mild cognitive impairment stage"
+        },
+        {
+            "id": "condition_2",
+            "name": "Type 2 Diabetes",
+            "diagnosed_on": "2015-04-18",
+            "notes": "Managed with medication and diet"
+        },
+        {
+            "id": "condition_3",
+            "name": "Chronic Back Pain",
+            "diagnosed_on": "2019-07-12",
+            "notes": "Undergoing physiotherapy sessions"
+        },
+        {
+            "id": "condition_4",
+            "name": "Arthritis",
+            "diagnosed_on": "2016-09-20",
+            "notes": "Primarily affecting knees and hands"
+        },
+        {
+            "id": "condition_5",
+            "name": "Sleep Apnea",
+            "diagnosed_on": "2021-03-05",
+            "notes": "Uses CPAP machine during sleep"
+        }
+    ]
+}

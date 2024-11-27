@@ -1,0 +1,212 @@
+[
+    {
+        "prob_id": 1,
+        "Q": "What is my occupation?",
+        "QD": "What did I use to work as?",
+        "A": "You are a retired engineer."
+    },
+    {
+        "prob_id": 2,
+        "Q": "How old am I?",
+        "QD": "What’s my age now?",
+        "A": "You are 68 years old."
+    },
+    {
+        "prob_id": 3,
+        "Q": "What are my interests?",
+        "QD": "What do I like doing?",
+        "A": "You enjoy fishing, cooking, traveling, photography, gardening, reading historical novels, and woodworking."
+    },
+    {
+        "prob_id": 4,
+        "Q": "Who is my spouse?",
+        "QD": "I’m married to who again?",
+        "A": "Your spouse is Lillian Carter."
+    },
+    {
+        "prob_id": 5,
+        "Q": "What is Lillian’s contact number?",
+        "QD": "Lillian’s phone, do you have it?",
+        "A": "Lillian’s contact number is 555-9012."
+    },
+    {
+        "prob_id": 6,
+        "Q": "What hobby do Lillian and I share?",
+        "QD": "What do Lillian and I like to do together?",
+        "A": "Lillian often joins you on fishing trips."
+    },
+    {
+        "prob_id": 7,
+        "Q": "Who is my primary doctor?",
+        "QD": "Who is my main health doctor?",
+        "A": "Your primary doctor is Dr. Olivia Moore."
+    },
+    {
+        "prob_id": 8,
+        "Q": "What specialty does Dr. Olivia Moore have?",
+        "QD": "Dr. Moore, what does she specialize in?",
+        "A": "Dr. Olivia Moore is a cardiologist."
+    },
+    {
+        "prob_id": 9,
+        "Q": "What is Dr. Olivia Moore’s contact number?",
+        "QD": "How to call Dr. Moore?",
+        "A": "Dr. Olivia Moore’s contact number is 555-7890."
+    },
+    {
+        "prob_id": 10,
+        "Q": "Who visits me every weekend?",
+        "QD": "Who comes every weekend?",
+        "A": "Your son, David Carter, visits every weekend."
+    },
+    {
+        "prob_id": 11,
+        "Q": "What instrument does David play?",
+        "QD": "What music thing does David play?",
+        "A": "David plays the guitar."
+    },
+    {
+        "prob_id": 12,
+        "Q": "What is my daughter Sophia’s occupation?",
+        "QD": "What does Sophia do for work?",
+        "A": "Sophia is a graphic designer."
+    },
+    {
+        "prob_id": 13,
+        "Q": "What shared interest do Sophia and I have?",
+        "QD": "What do Sophia and I both like?",
+        "A": "You and Sophia both enjoy photography."
+    },
+    {
+        "prob_id": 14,
+        "Q": "Who helps me with yard work?",
+        "QD": "Who often assists with the garden stuff?",
+        "A": "James O’Brien, your friend, helps with yard work."
+    },
+    {
+        "prob_id": 15,
+        "Q": "What is James O’Brien’s hobby?",
+        "QD": "What does James like to do?",
+        "A": "James O’Brien enjoys gardening."
+    },
+    {
+        "prob_id": 16,
+        "Q": "What is my brother Thomas’ relation to me?",
+        "QD": "How is Thomas connected to me?",
+        "A": "Thomas Carter is your brother."
+    },
+    {
+        "prob_id": 17,
+        "Q": "What do Thomas and I enjoy doing together?",
+        "QD": "What do Thomas and I like to make together?",
+        "A": "You both enjoy woodworking."
+    },
+    {
+        "prob_id": 18,
+        "Q": "Who is my longtime fishing companion?",
+        "QD": "Who goes fishing with me always?",
+        "A": "Your longtime fishing companion is Robert Harrison."
+    },
+    {
+        "prob_id": 19,
+        "Q": "Who organizes my family reunions?",
+        "QD": "Who takes care of the family gatherings?",
+        "A": "Your cousin, Martha Reynolds, organizes the family reunions."
+    },
+    {
+        "prob_id": 20,
+        "Q": "Where is the library in the facility?",
+        "QD": "Where’s the book place around here?",
+        "A": "The library is on the first floor, North Wing."
+    },
+    {
+        "prob_id": 21,
+        "Q": "What are the library’s operating hours?",
+        "QD": "When can I go to the library?",
+        "A": "The library is open from 8:00 AM to 8:00 PM."
+    },
+    {
+        "prob_id": 22,
+        "Q": "Where is the gymnasium located?",
+        "QD": "Where can I find the gym?",
+        "A": "The gymnasium is on the second floor, West Wing."
+    },
+    {
+        "prob_id": 23,
+        "Q": "What equipment does the gymnasium have?",
+        "QD": "What kind of workout machines are there in the gym?",
+        "A": "The gymnasium has treadmills, bikes, and weights."
+    },
+    {
+        "prob_id": 24,
+        "Q": "Where is the cafeteria located?",
+        "QD": "Where do we eat here in this place?",
+        "A": "The cafeteria is on the ground floor, Central Area."
+    },
+    {
+        "prob_id": 25,
+        "Q": "What meals does the cafeteria offer?",
+        "QD": "What kind of food is there in the cafeteria?",
+        "A": "The cafeteria offers meals and snacks."
+    },
+    {
+        "prob_id": 26,
+        "Q": "Where is the swimming pool located?",
+        "QD": "Where’s the place to swim inside here?",
+        "A": "The swimming pool is on the ground floor, South Wing."
+    },
+    {
+        "prob_id": 27,
+        "Q": "What are the swimming pool’s operating hours?",
+        "QD": "When can I go to the pool?",
+        "A": "The swimming pool is open from 9:00 AM to 6:00 PM."
+    },
+    {
+        "prob_id": 28,
+        "Q": "Where is the art studio located?",
+        "QD": "Where can I paint here?",
+        "A": "The art studio is on the third floor, East Wing."
+    },
+    {
+        "prob_id": 29,
+        "Q": "How often are art classes held in the studio?",
+        "QD": "When do they have art lessons?",
+        "A": "Art classes are held twice a week."
+    },
+    {
+        "prob_id": 30,
+        "Q": "When was I diagnosed with Alzheimer’s disease?",
+        "QD": "When was it that they said I have Alzheimer’s?",
+        "A": "You were diagnosed with Alzheimer’s disease on 2020-08-15."
+    },
+    {
+        "prob_id": 31,
+        "Q": "What stage of Alzheimer’s am I currently in?",
+        "QD": "What stage is my memory problem at now?",
+        "A": "You are in the mild cognitive impairment stage."
+    },
+    {
+        "prob_id": 32,
+        "Q": "What condition am I managing with medication and diet?",
+        "QD": "What’s the health issue I’m controlling with medicine and meals?",
+        "A": "You are managing Type 2 Diabetes with medication and diet."
+    },
+    {
+        "prob_id": 33,
+        "Q": "What therapy am I undergoing for chronic back pain?",
+        "QD": "What’s the treatment I do for my back pain?",
+        "A": "You are undergoing physiotherapy sessions."
+    },
+    {
+        "prob_id": 34,
+        "Q": "What medical device do I use for sleep apnea?",
+        "QD": "What’s the equipment I use for breathing at night?",
+        "A": "You use a CPAP machine for sleep apnea."
+    },
+    {
+        "prob_id": 35,
+        "Q": "What joints are primarily affected by my arthritis?",
+        "QD": "Where does my arthritis hurt the most?",
+        "A": "Your arthritis primarily affects your knees and hands."
+    }
+]

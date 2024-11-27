@@ -1,0 +1,76 @@
+{
+    "Private": {
+        "id": "private_info",
+        "name": "Samuel Carter",
+        "gender": "Male",
+        "age": 68,
+        "occupation": "Retired Engineer",
+        "interests": ["Fishing", "Cooking", "Traveling", "Photography", "Gardening", "Reading Historical Novels", "Woodworking"]
+    },
+    "Relations": [
+        {
+            "id": "relation_1",
+            "relation": "Spouse",
+            "name": "Lillian Carter",
+            "contact": "555-9012",
+            "notes": "Enjoys painting; often joins Samuel on fishing trips"
+        },
+        {
+            "id": "relation_2",
+            "relation": "Son",
+            "name": "David Carter",
+            "contact": "555-3456",
+            "notes": "Plays the guitar; visits every weekend"
+        },
+        {
+            "id": "relation_3",
+            "relation": "Daughter",
+            "name": "Sophia Carter",
+            "contact": "555-2345",
+            "notes": "Works as a graphic designer; shares an interest in photography"
+        },
+        {
+            "id": "relation_4",
+            "relation": "Primary Doctor",
+            "name": "Dr. Olivia Moore",
+            "contact": "555-7890",
+            "specialty": "Cardiologist",
+            "notes": "Monitors Samuel’s heart condition"
+        },
+        {
+            "id": "relation_5",
+            "relation": "Friend",
+            "name": "James O'Brien",
+            "contact": "555-6543",
+            "notes": "Helps with yard work; enjoys gardening discussions"
+        },
+        {
+            "id": "relation_6",
+            "relation": "Brother",
+            "name": "Thomas Carter",
+            "contact": "555-1111",
+            "notes": "Retired professor; enjoys woodworking with Samuel"
+        },
+        {
+            "id": "relation_7",
+            "relation": "Neighbor",
+            "name": "Anna Ramirez",
+            "contact": "555-2222",
+            "notes": "Bakes cookies for neighborhood events; shares a love for cooking"
+        },
+        {
+            "id": "relation_8",
+            "relation": "Friend",
+            "name": "Robert Harrison",
+            "contact": "555-3333",
+            "notes": "Longtime fishing companion"
+        },
+        {
+            "id": "relation_9",
+            "relation": "Cousin",
+            "name": "Martha Reynolds",
+            "contact": "555-4444",
+            "notes": "Organizes family reunions; loves historical novels"
+        }
+    ]
+}
