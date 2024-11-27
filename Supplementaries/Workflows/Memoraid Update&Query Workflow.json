@@ -1,0 +1,3074 @@
+{
+  "last_node_id": 108,
+  "last_link_id": 162,
+  "nodes": [
+    {
+      "id": 87,
+      "type": "JsonFileUpdator",
+      "pos": {
+        "0": 3368,
+        "1": 691
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_str",
+          "type": "STRING",
+          "link": 135,
+          "widget": {
+            "name": "input_str"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "updated_content",
+          "type": "STRING",
+          "links": [
+            136
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JsonFileUpdator"
+      },
+      "widgets_values": [
+        "",
+        "C:\\Users\\rog\\Desktop\\大学\\UoT\\第二学期\\ECE1786 Creative application of natural language processing\\project\\Alex"
+      ]
+    },
+    {
+      "id": 44,
+      "type": "show_text_party",
+      "pos": {
+        "0": 88,
+        "1": 1170
+      },
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 160,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            80,
+            124
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 85,
+      "type": "show_text_party",
+      "pos": {
+        "0": 3361,
+        "1": 310
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 130,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            135
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 88,
+      "type": "show_text_party",
+      "pos": {
+        "0": 3721,
+        "1": 653
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 136,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            138
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 23,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 686,
+        "1": 33
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [
+            150
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "gpt-4o-mini",
+        "https://api.openai.com/v1",
+        "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",
+        false
+      ]
+    },
+    {
+      "id": 65,
+      "type": "JsonFileQuerier",
+      "pos": {
+        "0": 2009,
+        "1": 200
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_str",
+          "type": "STRING",
+          "link": 104,
+          "widget": {
+            "name": "input_str"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "query_output",
+          "type": "STRING",
+          "links": [
+            105
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "update_output",
+          "type": "STRING",
+          "links": [
+            128
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JsonFileQuerier"
+      },
+      "widgets_values": [
+        "",
+        "C:\\Users\\rog\\Desktop\\大学\\UoT\\第二学期\\ECE1786 Creative application of natural language processing\\project\\Alex"
+      ]
+    },
+    {
+      "id": 102,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 2806,
+        "1": 144
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [
+            154
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "gpt-4o-mini",
+        "https://api.openai.com/v1",
+        "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",
+        false
+      ]
+    },
+    {
+      "id": 86,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 3136,
+        "1": 142
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "qwen:32b",
+        "http://localhost:11454/v1",
+        "ollama",
+        false
+      ]
+    },
+    {
+      "id": 62,
+      "type": "show_text_party",
+      "pos": {
+        "0": 2387,
+        "1": -236
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 105,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            137
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "[\n  {\n    \"id\": \"facility_1\",\n    \"name\": \"Dining Hall\",\n    \"location\": \"First Floor, East Wing\",\n    \"notes\": \"\"\n  },\n  {\n    \"id\": \"facility_2\",\n    \"name\": \"Recreation Room\",\n    \"location\": \"Second Floor, East Wing\",\n    \"notes\": \"Room number is E-201\"\n  },\n  {\n    \"id\": \"facility_3\",\n    \"name\": \"Garden\",\n    \"location\": \"Ground Floor, South Side\",\n    \"notes\": \"Opened from 10 to 10\"\n  }\n]"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 49,
+      "type": "file_combine",
+      "pos": {
+        "0": 4534,
+        "1": 1035
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "file1",
+          "type": "STRING",
+          "link": 80,
+          "widget": {
+            "name": "file1"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file2",
+          "type": "STRING",
+          "link": 139,
+          "widget": {
+            "name": "file2"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file3",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file3"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "files",
+          "type": "STRING",
+          "links": [
+            81,
+            82
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "file_combine"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 89,
+      "type": "file_combine",
+      "pos": {
+        "0": 4125,
+        "1": 180
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "file1",
+          "type": "STRING",
+          "link": 137,
+          "widget": {
+            "name": "file1"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file2",
+          "type": "STRING",
+          "link": 138,
+          "widget": {
+            "name": "file2"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file3",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file3"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "files",
+          "type": "STRING",
+          "links": [
+            139
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "file_combine"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 68,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 5151,
+        "1": 38
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [
+            155
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "gpt-4o-mini",
+        "https://api.openai.com/v1",
+        "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",
+        false
+      ]
+    },
+    {
+      "id": 41,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 5471,
+        "1": 38
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "qwen:32b",
+        "http://localhost:11454/v1",
+        "ollama",
+        false
+      ]
+    },
+    {
+      "id": 42,
+      "type": "LLM",
+      "pos": {
+        "0": 5222,
+        "1": 207
+      },
+      "size": {
+        "0": 453.352294921875,
+        "1": 578.7173461914062
+      },
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "link": 155,
+          "label": "model"
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "label": "images",
+          "shape": 7
+        },
+        {
+          "name": "extra_parameters",
+          "type": "DICT",
+          "link": null,
+          "label": "extra_parameters",
+          "shape": 7
+        },
+        {
+          "name": "system_prompt_input",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "system_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_prompt_input",
+          "type": "STRING",
+          "link": 81,
+          "widget": {
+            "name": "user_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "tools"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file_content"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_history",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "user_history"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "assistant_response",
+          "type": "STRING",
+          "links": [
+            72
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "assistant_response"
+        },
+        {
+          "name": "history",
+          "type": "STRING",
+          "links": [
+            76
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "history"
+        },
+        {
+          "name": "tool",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "tool"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3,
+          "label": "image"
+        }
+      ],
+      "title": "Natural language generation Agent",
+      "properties": {
+        "Node name for S&R": "LLM"
+      },
+      "widgets_values": [
+        "**Prompt**:\n\nYou will act as an AI assistant communicating with an Alzheimer's patient. Your task is to provide a clear and compassionate response based on the patient's original question and the relevant information provided. The input you receive will include both the patient's original question and a piece of relevant information extracted from a database (which could also be updated information in case of an update operation).\n\n**Task**:\n\n1. Analyze the relationship between the patient's original question and the provided information.\n2. If a logical relationship exists, generate a response that is suitable for an Alzheimer's patient: warm, easy to understand, and using natural language.\n3. If no logical relationship is found, respond in a gentle manner, indicating that the requested information could not be found, avoiding any language that could distress or confuse the patient.\n\n**Input Format**:\n\n- **Original Question**: The patient's original question, e.g., \"Who's Robert?\"\n- **Related Information**: The relevant information from the database, e.g.,\n  ```\n  {\n    \"id\": \"relation_4\",\n    \"relation\": \"Friend\",\n    \"name\": \"Robert Williams\",\n    \"contact\": \"555-8765\",\n    \"notes\": \"Likes to play chess\"\n  }\n  ```\n\n**Output Requirements**:\n\n1. **Logical Relationship Found**: If the provided information is relevant to the question, generate a response that addresses the patient's question in a simple and compassionate manner.\n   - Example:\n     - **Input**:\n       - Original Question: \"Who's Robert?\"\n       - Related Information:\n         ```\n         {\n           \"id\": \"relation_4\",\n           \"relation\": \"Friend\",\n           \"name\": \"Robert Williams\",\n           \"contact\": \"555-8765\",\n           \"notes\": \"Likes to play chess\"\n         }\n         ```\n     - **Output**:\n       - \"Robert is your friend. He likes to play chess and you can reach him at 555-8765.\"\n\n2. **No Logical Relationship Found**: If the provided information is not relevant to the question, generate a gentle response indicating that no relevant information could be found.\n   - Example:\n     - **Input**:\n       - Original Question: \"Who's Robert?\"\n       - Related Information: (Unrelated or not matching)\n         ```\n         {\n           \"id\": \"relation_4\",\n           \"relation\": \"Primary Doctor\",\n           \"name\": \"Dr. Sarah Lee\",\n           \"contact\": \"555-4321\",\n           \"notes\": \"Neurologist\"\n         }\n         ```\n     - **Output**:\n       - \"I'm sorry, I couldn't find information about Robert. Would you like me to look for something else?\"\n\n**Guidelines**:\n\n- Responses should always be warm, supportive, and easy to understand.\n- Avoid complex terminology or long explanations. Keep the language simple.\n- For update operations, use the updated information to craft the response, ensuring that the patient feels acknowledged.\n- When information is unavailable, avoid negative phrasing. Instead, gently redirect or offer help.\n\n**Additional Notes**:\n\n- The patient may ask questions about people, facilities, or medical history.\n- Always be attentive to the tone, ensuring it is caring and comforting to minimize any potential distress.\n- If the information indicates the intention of an update action, then confirm the update based on JSON file's content.",
+        "",
+        0.7,
+        "disable",
+        "disable",
+        "disable",
+        "enable",
+        1920,
+        "",
+        "",
+        "",
+        "",
+        "",
+        101,
+        "",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 45,
+      "type": "show_text_party",
+      "pos": {
+        "0": 5691,
+        "1": 211
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 72,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            132,
+            133
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "The garden is open from 10 in the morning until 10 at night. It's located on the ground floor, south side of the building. Enjoy your time there!"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 46,
+      "type": "show_text_party",
+      "pos": {
+        "0": 5694,
+        "1": 540
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 76,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "[\n    {\n        \"role\": \"system\",\n        \"content\": \"**Prompt**:\\n\\nYou will act as an AI assistant communicating with an Alzheimer's patient. Your task is to provide a clear and compassionate response based on the patient's original question and the relevant information provided. The input you receive will include both the patient's original question and a piece of relevant information extracted from a database (which could also be updated information in case of an update operation).\\n\\n**Task**:\\n\\n1. Analyze the relationship between the patient's original question and the provided information.\\n2. If a logical relationship exists, generate a response that is suitable for an Alzheimer's patient: warm, easy to understand, and using natural language.\\n3. If no logical relationship is found, respond in a gentle manner, indicating that the requested information could not be found, avoiding any language that could distress or confuse the patient.\\n\\n**Input Format**:\\n\\n- **Original Question**: The patient's original question, e.g., \\\"Who's Robert?\\\"\\n- **Related Information**: The relevant information from the database, e.g.,\\n  ```\\n  {\\n    \\\"id\\\": \\\"relation_4\\\",\\n    \\\"relation\\\": \\\"Friend\\\",\\n    \\\"name\\\": \\\"Robert Williams\\\",\\n    \\\"contact\\\": \\\"555-8765\\\",\\n    \\\"notes\\\": \\\"Likes to play chess\\\"\\n  }\\n  ```\\n\\n**Output Requirements**:\\n\\n1. **Logical Relationship Found**: If the provided information is relevant to the question, generate a response that addresses the patient's question in a simple and compassionate manner.\\n   - Example:\\n     - **Input**:\\n       - Original Question: \\\"Who's Robert?\\\"\\n       - Related Information:\\n         ```\\n         {\\n           \\\"id\\\": \\\"relation_4\\\",\\n           \\\"relation\\\": \\\"Friend\\\",\\n           \\\"name\\\": \\\"Robert Williams\\\",\\n           \\\"contact\\\": \\\"555-8765\\\",\\n           \\\"notes\\\": \\\"Likes to play chess\\\"\\n         }\\n         ```\\n     - **Output**:\\n       - \\\"Robert is your friend. He likes to play chess and you can reach him at 555-8765.\\\"\\n\\n2. **No Logical Relationship Found**: If the provided information is not relevant to the question, generate a gentle response indicating that no relevant information could be found.\\n   - Example:\\n     - **Input**:\\n       - Original Question: \\\"Who's Robert?\\\"\\n       - Related Information: (Unrelated or not matching)\\n         ```\\n         {\\n           \\\"id\\\": \\\"relation_4\\\",\\n           \\\"relation\\\": \\\"Primary Doctor\\\",\\n           \\\"name\\\": \\\"Dr. Sarah Lee\\\",\\n           \\\"contact\\\": \\\"555-4321\\\",\\n           \\\"notes\\\": \\\"Neurologist\\\"\\n         }\\n         ```\\n     - **Output**:\\n       - \\\"I'm sorry, I couldn't find information about Robert. Would you like me to look for something else?\\\"\\n\\n**Guidelines**:\\n\\n- Responses should always be warm, supportive, and easy to understand.\\n- Avoid complex terminology or long explanations. Keep the language simple.\\n- For update operations, use the updated information to craft the response, ensuring that the patient feels acknowledged.\\n- When information is unavailable, avoid negative phrasing. Instead, gently redirect or offer help.\\n\\n**Additional Notes**:\\n\\n- The patient may ask questions about people, facilities, or medical history.\\n- Always be attentive to the tone, ensuring it is caring and comforting to minimize any potential distress.\\n- If the information indicates the intention of an update action, then confirm the update based on JSON file's content.\"\n    },\n    {\n        \"role\": \"user\",\n        \"content\": \"When will the garden be on?\\n[\\n  {\\n    \\\"id\\\": \\\"facility_1\\\",\\n    \\\"name\\\": \\\"Dining Hall\\\",\\n    \\\"location\\\": \\\"First Floor, East Wing\\\",\\n    \\\"notes\\\": \\\"\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"facility_2\\\",\\n    \\\"name\\\": \\\"Recreation Room\\\",\\n    \\\"location\\\": \\\"Second Floor, East Wing\\\",\\n    \\\"notes\\\": \\\"Room number is E-201\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"facility_3\\\",\\n    \\\"name\\\": \\\"Garden\\\",\\n    \\\"location\\\": \\\"Ground Floor, South Side\\\",\\n    \\\"notes\\\": \\\"Opened from 10 to 10\\\"\\n  }\\n]\\n\\n\"\n    },\n    {\n        \"role\": \"assistant\",\n        \"content\": \"The garden is open from 10 in the morning until 10 at night. It's located on the ground floor, south side of the building. Enjoy your time there!\"\n    }\n]"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 51,
+      "type": "show_text_party",
+      "pos": {
+        "0": 4553,
+        "1": 1213
+      },
+      "size": {
+        "0": 290.2607116699219,
+        "1": 195.81893920898438
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 82,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            83
+          ],
+          "slot_index": 0,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "When will the garden be on?\n[\n  {\n    \"id\": \"facility_1\",\n    \"name\": \"Dining Hall\",\n    \"location\": \"First Floor, East Wing\",\n    \"notes\": \"\"\n  },\n  {\n    \"id\": \"facility_2\",\n    \"name\": \"Recreation Room\",\n    \"location\": \"Second Floor, East Wing\",\n    \"notes\": \"Room number is E-201\"\n  },\n  {\n    \"id\": \"facility_3\",\n    \"name\": \"Garden\",\n    \"location\": \"Ground Floor, South Side\",\n    \"notes\": \"Opened from 10 to 10\"\n  }\n]\n\n"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 7465,
+        "1": 23
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "qwen2",
+        "http://localhost:11454/v1",
+        "ollama",
+        false
+      ]
+    },
+    {
+      "id": 73,
+      "type": "LLM",
+      "pos": {
+        "0": 8664,
+        "1": 199
+      },
+      "size": {
+        "0": 420.8849182128906,
+        "1": 531.2948608398438
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "link": 161,
+          "label": "model"
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "label": "images",
+          "shape": 7
+        },
+        {
+          "name": "extra_parameters",
+          "type": "DICT",
+          "link": null,
+          "label": "extra_parameters",
+          "shape": 7
+        },
+        {
+          "name": "system_prompt_input",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "system_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_prompt_input",
+          "type": "STRING",
+          "link": 117,
+          "widget": {
+            "name": "user_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "tools"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file_content"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_history",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "user_history"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "assistant_response",
+          "type": "STRING",
+          "links": [
+            119
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "assistant_response"
+        },
+        {
+          "name": "history",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "history"
+        },
+        {
+          "name": "tool",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "tool"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3,
+          "label": "image"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM"
+      },
+      "widgets_values": [
+        "**Prompt**:\n\nYou will act as an AI agent responsible for verifying the correctness of a response generated for an Alzheimer's patient. You will receive an input that consists of the user's original input, the relevant JSON content extracted from the database, and the response generated by a previous agent. Your task is to determine if the generated response is correct and consistent with the given JSON content.\n\n**Input Format**:\n\n1. **User's Original Input**: The original question or statement made by the user, e.g., \"Who's Robert?\"\n2. **Relevant JSON Content**: The relevant information extracted from the database, e.g.,\n   {\n     \"id\": \"relation_4\",\n     \"relation\": \"Friend\",\n     \"name\": \"Robert Williams\",\n     \"contact\": \"555-8765\",\n     \"notes\": \"Likes to play chess\"\n   }\n3. **Generated Response**: The response generated by the previous agent, e.g., \"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\"\n\n**Task**:\n\n1. Compare the information in the generated response with the relevant JSON content.\n2. Determine whether the response correctly and accurately reflects the information provided in the JSON content.\n3. Output the result in the following format:\n   {\n     \"vote\": 0 or 1,  // 0 means incorrect, 1 means correct\n     \"reason\": \"Provide a brief reason for the decision in three sentences or less.\"\n   }\n\n**Example**:\n\n- **Input**:\n  - User's Original Input: \"Who's Robert?\"\n  - Relevant JSON Content:\n    {\n      \"id\": \"relation_4\",\n      \"relation\": \"Friend\",\n      \"name\": \"Robert Williams\",\n      \"contact\": \"555-8765\",\n      \"notes\": \"Likes to play chess\"\n    }\n  - Generated Response: \"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\"\n\n- **Output**:\n  {\n    \"vote\": 1,\n    \"reason\": \"The response accurately matches all details provided in the JSON content.\"\n  }\n\n**Guidelines**:\n\n- Ensure that every detail mentioned in the response is present in the relevant JSON content.\n- If any information in the response is not supported by the JSON content or contradicts it, output a \"vote\" of 0.\n- If the generated response contains additional reasonable inferences or supplemental information that do not contradict the JSON content, it can still be considered correct.\n- If the relevant JSON file does not exist or no matching content is found, and the response indicates that the information is unknown, consider the response correct.\n- Focus only on verifying the factual correctness based on the provided JSON content, without considering language simplicity or tone.\n- Provide a brief reason for your decision, summarizing why the response is correct or incorrect in three sentences or less.\n",
+        "",
+        0.7,
+        "disable",
+        "disable",
+        "disable",
+        "enable",
+        1920,
+        "",
+        "",
+        "",
+        "",
+        "",
+        100,
+        "",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 67,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 7144,
+        "1": 23
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [
+            112
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "gpt-4o-mini",
+        "https://api.openai.com/v1",
+        "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",
+        false
+      ]
+    },
+    {
+      "id": 72,
+      "type": "LLM",
+      "pos": {
+        "0": 9951,
+        "1": 199
+      },
+      "size": {
+        "0": 462.38232421875,
+        "1": 613.7527465820312
+      },
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "link": 162,
+          "label": "model"
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "label": "images",
+          "shape": 7
+        },
+        {
+          "name": "extra_parameters",
+          "type": "DICT",
+          "link": null,
+          "label": "extra_parameters",
+          "shape": 7
+        },
+        {
+          "name": "system_prompt_input",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "system_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_prompt_input",
+          "type": "STRING",
+          "link": 118,
+          "widget": {
+            "name": "user_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "tools"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file_content"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_history",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "user_history"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "assistant_response",
+          "type": "STRING",
+          "links": [
+            120
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "assistant_response"
+        },
+        {
+          "name": "history",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "history"
+        },
+        {
+          "name": "tool",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "tool"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3,
+          "label": "image"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM"
+      },
+      "widgets_values": [
+        "**Prompt**:\n\nYou will act as an AI agent responsible for verifying the correctness of a response generated for an Alzheimer's patient. You will receive an input that consists of the user's original input, the relevant JSON content extracted from the database, and the response generated by a previous agent. Your task is to determine if the generated response is correct and consistent with the given JSON content.\n\n**Input Format**:\n\n1. **User's Original Input**: The original question or statement made by the user, e.g., \"Who's Robert?\"\n2. **Relevant JSON Content**: The relevant information extracted from the database, e.g.,\n   {\n     \"id\": \"relation_4\",\n     \"relation\": \"Friend\",\n     \"name\": \"Robert Williams\",\n     \"contact\": \"555-8765\",\n     \"notes\": \"Likes to play chess\"\n   }\n3. **Generated Response**: The response generated by the previous agent, e.g., \"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\"\n\n**Task**:\n\n1. Compare the information in the generated response with the relevant JSON content.\n2. Determine whether the response correctly and accurately reflects the information provided in the JSON content.\n3. Output the result in the following format:\n   {\n     \"vote\": 0 or 1,  // 0 means incorrect, 1 means correct\n     \"reason\": \"Provide a brief reason for the decision in three sentences or less.\"\n   }\n\n**Example**:\n\n- **Input**:\n  - User's Original Input: \"Who's Robert?\"\n  - Relevant JSON Content:\n    {\n      \"id\": \"relation_4\",\n      \"relation\": \"Friend\",\n      \"name\": \"Robert Williams\",\n      \"contact\": \"555-8765\",\n      \"notes\": \"Likes to play chess\"\n    }\n  - Generated Response: \"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\"\n\n- **Output**:\n  {\n    \"vote\": 1,\n    \"reason\": \"The response accurately matches all details provided in the JSON content.\"\n  }\n\n**Guidelines**:\n\n- Ensure that every detail mentioned in the response is present in the relevant JSON content.\n- If any information in the response is not supported by the JSON content or contradicts it, output a \"vote\" of 0.\n- If the generated response contains additional reasonable inferences or supplemental information that do not contradict the JSON content, it can still be considered correct.\n- If the relevant JSON file does not exist or no matching content is found, and the response indicates that the information is unknown, consider the response correct.\n- Focus only on verifying the factual correctness based on the provided JSON content, without considering language simplicity or tone.\n- Provide a brief reason for your decision, summarizing why the response is correct or incorrect in three sentences or less.\n",
+        "",
+        0.7,
+        "disable",
+        "disable",
+        "disable",
+        "enable",
+        1920,
+        "",
+        "",
+        "",
+        "",
+        "",
+        100,
+        "",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 53,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 8885,
+        "1": 23
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "qwen2",
+        "http://localhost:11454/v1",
+        "ollama",
+        false
+      ]
+    },
+    {
+      "id": 74,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 10212,
+        "1": 23
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "qwen:32b",
+        "http://localhost:11454/v1",
+        "ollama",
+        false
+      ]
+    },
+    {
+      "id": 78,
+      "type": "show_text_party",
+      "pos": {
+        "0": 10431,
+        "1": 196
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 120,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            123
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "{ \"vote\": 1, \"reason\": \"The response correctly states the garden's operating hours and location based on the provided JSON content.\" }"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 77,
+      "type": "show_text_party",
+      "pos": {
+        "0": 9094,
+        "1": 196
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 119,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            121
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "{\n  \"vote\": 1,\n  \"reason\": \"The response correctly identifies that the garden is located on the ground floor, south side and specifies its opening hours from 10 in the morning until 10 at night.\"\n}"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 52,
+      "type": "file_combine",
+      "pos": {
+        "0": 6302,
+        "1": 1141
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "file1",
+          "type": "STRING",
+          "link": 83,
+          "widget": {
+            "name": "file1"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file2",
+          "type": "STRING",
+          "link": 133,
+          "widget": {
+            "name": "file2"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file3",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file3"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "files",
+          "type": "STRING",
+          "links": [
+            91,
+            93,
+            117,
+            118
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "file_combine"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 59,
+      "type": "show_text_party",
+      "pos": {
+        "0": 6302,
+        "1": 1313
+      },
+      "size": {
+        "0": 307.3123779296875,
+        "1": 183.3030242919922
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 91,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "When will the garden be on?\n[\n  {\n    \"id\": \"facility_1\",\n    \"name\": \"Dining Hall\",\n    \"location\": \"First Floor, East Wing\",\n    \"notes\": \"\"\n  },\n  {\n    \"id\": \"facility_2\",\n    \"name\": \"Recreation Room\",\n    \"location\": \"Second Floor, East Wing\",\n    \"notes\": \"Room number is E-201\"\n  },\n  {\n    \"id\": \"facility_3\",\n    \"name\": \"Garden\",\n    \"location\": \"Ground Floor, South Side\",\n    \"notes\": \"Opened from 10 to 10\"\n  }\n]\n\n\nThe garden is open from 10 in the morning until 10 at night. It's located on the ground floor, south side of the building. Enjoy your time there!\n"
+      ]
+    },
+    {
+      "id": 70,
+      "type": "VoteBasedRouter",
+      "pos": {
+        "0": 8775,
+        "1": 1279
+      },
+      "size": {
+        "0": 315,
+        "1": 150
+      },
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_input_2",
+          "type": "STRING",
+          "link": 121,
+          "widget": {
+            "name": "json_input_2"
+          }
+        },
+        {
+          "name": "json_input_1",
+          "type": "STRING",
+          "link": 122,
+          "widget": {
+            "name": "json_input_1"
+          }
+        },
+        {
+          "name": "json_input_3",
+          "type": "STRING",
+          "link": 123,
+          "widget": {
+            "name": "json_input_3"
+          }
+        },
+        {
+          "name": "user_input",
+          "type": "STRING",
+          "link": 124,
+          "widget": {
+            "name": "user_input"
+          }
+        },
+        {
+          "name": "voted_reply",
+          "type": "STRING",
+          "link": 132,
+          "widget": {
+            "name": "voted_reply"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "vote>=2",
+          "type": "STRING",
+          "links": [
+            125
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "vote<2",
+          "type": "STRING",
+          "links": [
+            126
+          ],
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VoteBasedRouter"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 80,
+      "type": "show_text_party",
+      "pos": {
+        "0": 9268,
+        "1": 1450
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 126,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            157
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 79,
+      "type": "show_text_party",
+      "pos": {
+        "0": 9264,
+        "1": 1121
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 125,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            156
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "The garden is open from 10 in the morning until 10 at night. It's located on the ground floor, south side of the building. Enjoy your time there!"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 105,
+      "type": "file_combine",
+      "pos": {
+        "0": 9842,
+        "1": 1314
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "file1",
+          "type": "STRING",
+          "link": 156,
+          "widget": {
+            "name": "file1"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file2",
+          "type": "STRING",
+          "link": 157,
+          "widget": {
+            "name": "file2"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file3",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file3"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "files",
+          "type": "STRING",
+          "links": [
+            158
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "file_combine"
+      },
+      "widgets_values": [
+        true,
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 100,
+      "type": "end_workflow",
+      "pos": {
+        "0": 10189,
+        "1": 1318
+      },
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 158,
+          "widget": {
+            "name": "text"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "end_workflow"
+      },
+      "widgets_values": [
+        "ComfyUI",
+        ""
+      ]
+    },
+    {
+      "id": 99,
+      "type": "start_workflow",
+      "pos": {
+        "0": -578,
+        "1": 199
+      },
+      "size": {
+        "0": 355.20001220703125,
+        "1": 390
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_input1",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "image_input2",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file_content"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "user_prompt",
+          "type": "STRING",
+          "links": [
+            159,
+            160
+          ],
+          "slot_index": 4
+        },
+        {
+          "name": "positive_prompt",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "negative_prompt",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "model_name",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "start_workflow"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 69,
+      "type": "Note",
+      "pos": {
+        "0": 2019,
+        "1": 53
+      },
+      "size": {
+        "0": 293.7723083496094,
+        "1": 110.75213623046875
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Change the folder path to the folder that contains: \n\nDaily_log.json,\nPersonal_info.json,\nService_info.json"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 106,
+      "type": "Note",
+      "pos": {
+        "0": 3374,
+        "1": 809
+      },
+      "size": {
+        "0": 293.7723083496094,
+        "1": 110.75213623046875
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Change the folder path to the folder that contains: \n\nDaily_log.json,\nPersonal_info.json,\nService_info.json"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 34,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 997,
+        "1": 33
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "qwen2",
+        "http://localhost:11454/v1",
+        "ollama",
+        false
+      ]
+    },
+    {
+      "id": 35,
+      "type": "show_text_party",
+      "pos": {
+        "0": 1228,
+        "1": 199
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 71,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            104
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 25,
+      "type": "LLM",
+      "pos": {
+        "0": 686,
+        "1": 200
+      },
+      "size": {
+        "0": 454.4823913574219,
+        "1": 557.4664916992188
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "link": 150,
+          "label": "model"
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "label": "images",
+          "shape": 7
+        },
+        {
+          "name": "extra_parameters",
+          "type": "DICT",
+          "link": null,
+          "label": "extra_parameters",
+          "shape": 7
+        },
+        {
+          "name": "system_prompt_input",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "system_prompt_input"
+          }
+        },
+        {
+          "name": "user_prompt_input",
+          "type": "STRING",
+          "link": 159,
+          "widget": {
+            "name": "user_prompt_input"
+          }
+        },
+        {
+          "name": "tools",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "tools"
+          }
+        },
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file_content"
+          }
+        },
+        {
+          "name": "user_history",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "user_history"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "assistant_response",
+          "type": "STRING",
+          "links": [
+            71
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "assistant_response"
+        },
+        {
+          "name": "history",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "history"
+        },
+        {
+          "name": "tool",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "tool"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3,
+          "label": "image"
+        }
+      ],
+      "title": "LocateJson Agent",
+      "properties": {
+        "Node name for S&R": "LLM"
+      },
+      "widgets_values": [
+        "**Prompt**:\n\nYou will act as an AI assistant communicating with an Alzheimer's patient, helping determine if their input is a query or an update. Your goal is to convert the patient's input into a JSON-structured response for appropriate querying or updating actions.\n\n**JSON File Structure Overview**:\n\n1. **Personal_info.json**\n   - **Private**: Contains basic personal information about the patient itself with fields including:\n     - **id**: Identifier, e.g., `\"private_info\"`\n     - **name**: Name, e.g., `\"Alex Johnson\"`\n     - **gender**: Gender, e.g., `\"Male\"`\n     - **age**: Age, e.g., `76`\n     - **occupation**: Occupation, e.g., `\"Retired Teacher\"`\n     - **interests**: List of interests, e.g., `[\"Reading\", \"Gardening\", \"Bird Watching\"]`\n     \n   - **Relations**: Contains the patient's relationships with fields including:\n     - **id**: Identifier, e.g., `\"relation_1\"`\n     - **relation**: Relationship, e.g., `\"Daughter\"`, `\"Son\"`, `\"Primary Doctor\"`, `\"Friend\"`\n     - **name**: Name, e.g., `\"Emily Johnson\"`\n     - **contact**: Contact information, e.g., `\"555-1234\"`\n     - **notes**: Notes, e.g., `\"Suffers from allergies\"`\n\n2. **Service_info.json**\n   - **facility**: Contains information about service facilities with fields including:\n     - **id**: Identifier, e.g., `\"facility_1\"`\n     - **name**: Name, e.g., `\"Dining Hall\"`\n     - **location**: Location, e.g., `\"First Floor, East Wing\"`\n     - **notes**: Notes, e.g., `\"\"`\n\n   - **medical_history**: Contains the patient's medical history with fields including:\n     - **id**: Identifier, e.g., `\"condition_1\"`\n     - **name**: Condition name, e.g., `\"Alzheimer's Disease\"`\n     - **diagnosed_on**: Date of diagnosis, e.g., `\"2020-05-10\"`\n     - **notes**: Notes, e.g., `\"Early-stage diagnosis\"`\n\n**Task**:\n\nDetermine whether the user's input is a query or an update, then convert the input into a structured JSON response based on the file structure. The output format should be as follows:\n\n{\n  \"user_input\": \"<original user input>\",\n  \"action\": \"<query or update>\",\n  \"file\": \"<filename>\",\n  \"path\": \"<parent path>\",\n  \"new_value\": \"<new value if applicable>\"\n}\n\n**Examples**:\n\n1. **Input**:\n   - \"What's my daughter's phone number?\"\n   - **Output**:\n     {\n       \"user_input\": \"What's my daughter's phone number?\",\n       \"action\": \"query\",\n       \"file\": \"Personal_info\",\n       \"path\": \"Relations\"\n     }\n\n2. **Input**:\n   - \"Change my daughter's phone number to 555-9876.\"\n   - **Output**:\n     {\n       \"user_input\": \"Change my daughter's phone number to 555-9876.\",\n       \"action\": \"update\",\n       \"file\": \"Personal_info\",\n       \"path\": \"Relations\",\n       \"new_value\": \"555-9876\"\n     }\n\n3. **Input**:\n   - \"Where is the garden?\"\n   - **Output**:\n     {\n       \"user_input\": \"Where is the garden?\",\n       \"action\": \"query\",\n       \"file\": \"Service_info\",\n       \"path\": \"facility\"\n     }\n\n4. **Input**:\n   - \"Update the location of the recreation room to 'Third Floor, North Wing'.\"\n   - **Output**:\n     {\n       \"user_input\": \"Update the location of the recreation room to 'Third Floor, North Wing'.\",\n       \"action\": \"update\",\n       \"file\": \"Service_info\",\n       \"path\": \"facility\",\n       \"new_value\": \"Third Floor, North Wing\"\n     }\n\n**Notes**:\n\n1. Analyze the input to determine whether it is a query or an update.\n2. Based on the input, identify the correct JSON file and its specific fields.\n3. When outputting the path, ensure it only includes the parent path (e.g., `Relations` or `facility`) to allow retrieval of all related information under that path.\n4. Be aware that the \"Private\" directory should only be refered when user questioning something specifically about themselves.\n\n**File Structure Path Details**:\n\n- **Personal_info.json**\n  - **Private**: `Private` (e.g., `Private`)\n  - **Relations**: `Relations` (e.g., `Relations`)\n\n- **Service_info.json**\n  - **facility**: `facility` (e.g., `facility`)\n  - **medical_history**: `medical_history` (e.g., `medical_history`)\n\nBased on these detailed descriptions, convert the user's natural language input into the correct action type, file name, and parent path information in JSON format.",
+        "",
+        0.7,
+        "disable",
+        "disable",
+        "disable",
+        "enable",
+        1920,
+        "",
+        "",
+        "",
+        "",
+        "",
+        100,
+        "",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 83,
+      "type": "show_text_party",
+      "pos": {
+        "0": 2374,
+        "1": 574.054443359375
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 128,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            129
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 54,
+      "type": "LLM",
+      "pos": {
+        "0": 7244,
+        "1": 199
+      },
+      "size": {
+        "0": 453.2005310058594,
+        "1": 600.35693359375
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "link": 112,
+          "label": "model"
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "label": "images",
+          "shape": 7
+        },
+        {
+          "name": "extra_parameters",
+          "type": "DICT",
+          "link": null,
+          "label": "extra_parameters",
+          "shape": 7
+        },
+        {
+          "name": "system_prompt_input",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "system_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_prompt_input",
+          "type": "STRING",
+          "link": 93,
+          "widget": {
+            "name": "user_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "tools"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file_content"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_history",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "user_history"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "assistant_response",
+          "type": "STRING",
+          "links": [
+            89
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "assistant_response"
+        },
+        {
+          "name": "history",
+          "type": "STRING",
+          "links": [
+            90
+          ],
+          "slot_index": 1,
+          "shape": 3,
+          "label": "history"
+        },
+        {
+          "name": "tool",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "tool"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3,
+          "label": "image"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM"
+      },
+      "widgets_values": [
+        "**Prompt**:\n\nYou will act as an AI agent responsible for verifying the correctness of a response generated for an Alzheimer's patient. You will receive an input that consists of the user's original input, the relevant JSON content extracted from the database, and the response generated by a previous agent. Your task is to determine if the generated response is correct and consistent with the given JSON content.\n\n**Input Format**:\n\n1. **User's Original Input**: The original question or statement made by the user, e.g., \"Who's Robert?\"\n2. **Relevant JSON Content**: The relevant information extracted from the database, e.g.,\n   {\n     \"id\": \"relation_4\",\n     \"relation\": \"Friend\",\n     \"name\": \"Robert Williams\",\n     \"contact\": \"555-8765\",\n     \"notes\": \"Likes to play chess\"\n   }\n3. **Generated Response**: The response generated by the previous agent, e.g., \"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\"\n\n**Task**:\n\n1. Compare the information in the generated response with the relevant JSON content.\n2. Determine whether the response correctly and accurately reflects the information provided in the JSON content.\n3. Output the result in the following format:\n   {\n     \"vote\": 0 or 1,  // 0 means incorrect, 1 means correct\n     \"reason\": \"Provide a brief reason for the decision in three sentences or less.\"\n   }\n\n**Example**:\n\n- **Input**:\n  - User's Original Input: \"Who's Robert?\"\n  - Relevant JSON Content:\n    {\n      \"id\": \"relation_4\",\n      \"relation\": \"Friend\",\n      \"name\": \"Robert Williams\",\n      \"contact\": \"555-8765\",\n      \"notes\": \"Likes to play chess\"\n    }\n  - Generated Response: \"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\"\n\n- **Output**:\n  {\n    \"vote\": 1,\n    \"reason\": \"The response accurately matches all details provided in the JSON content.\"\n  }\n\n**Guidelines**:\n\n- Ensure that every detail mentioned in the response is present in the relevant JSON content.\n- If any information in the response is not supported by the JSON content or contradicts it, output a \"vote\" of 0.\n- If the generated response contains additional reasonable inferences or supplemental information that do not contradict the JSON content, it can still be considered correct.\n- If the relevant JSON file does not exist or no matching content is found, and the response indicates that the information is unknown, consider the response correct.\n- Focus only on verifying the factual correctness based on the provided JSON content, without considering language simplicity or tone.\n- Provide a brief reason for your decision, summarizing why the response is correct or incorrect in three sentences or less.\n",
+        "",
+        0.7,
+        "disable",
+        "disable",
+        "disable",
+        "enable",
+        1920,
+        "",
+        "",
+        "",
+        "",
+        "",
+        100,
+        "",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 57,
+      "type": "show_text_party",
+      "pos": {
+        "0": 7722,
+        "1": 196
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 89,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            122
+          ],
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "{\n  \"vote\": 1,\n  \"reason\": \"The response accurately reflects the information provided in the JSON content, stating the garden's hours and location correctly. Additionally, it encourages enjoyment, which is a reasonable inference that does not contradict the JSON details.\"\n}"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 58,
+      "type": "show_text_party",
+      "pos": {
+        "0": 7722,
+        "1": 506
+      },
+      "size": {
+        "0": 454.6876220703125,
+        "1": 290.2985534667969
+      },
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 90,
+          "widget": {
+            "name": "text"
+          },
+          "label": "text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 0,
+          "shape": 6,
+          "label": "STRING"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "show_text_party"
+      },
+      "widgets_values": [
+        "",
+        "[\n    {\n        \"role\": \"system\",\n        \"content\": \"**Prompt**:\\n\\nYou will act as an AI agent responsible for verifying the correctness of a response generated for an Alzheimer's patient. You will receive an input that consists of the user's original input, the relevant JSON content extracted from the database, and the response generated by a previous agent. Your task is to determine if the generated response is correct and consistent with the given JSON content.\\n\\n**Input Format**:\\n\\n1. **User's Original Input**: The original question or statement made by the user, e.g., \\\"Who's Robert?\\\"\\n2. **Relevant JSON Content**: The relevant information extracted from the database, e.g.,\\n   {\\n     \\\"id\\\": \\\"relation_4\\\",\\n     \\\"relation\\\": \\\"Friend\\\",\\n     \\\"name\\\": \\\"Robert Williams\\\",\\n     \\\"contact\\\": \\\"555-8765\\\",\\n     \\\"notes\\\": \\\"Likes to play chess\\\"\\n   }\\n3. **Generated Response**: The response generated by the previous agent, e.g., \\\"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\\\"\\n\\n**Task**:\\n\\n1. Compare the information in the generated response with the relevant JSON content.\\n2. Determine whether the response correctly and accurately reflects the information provided in the JSON content.\\n3. Output the result in the following format:\\n   {\\n     \\\"vote\\\": 0 or 1,  // 0 means incorrect, 1 means correct\\n     \\\"reason\\\": \\\"Provide a brief reason for the decision in three sentences or less.\\\"\\n   }\\n\\n**Example**:\\n\\n- **Input**:\\n  - User's Original Input: \\\"Who's Robert?\\\"\\n  - Relevant JSON Content:\\n    {\\n      \\\"id\\\": \\\"relation_4\\\",\\n      \\\"relation\\\": \\\"Friend\\\",\\n      \\\"name\\\": \\\"Robert Williams\\\",\\n      \\\"contact\\\": \\\"555-8765\\\",\\n      \\\"notes\\\": \\\"Likes to play chess\\\"\\n    }\\n  - Generated Response: \\\"Robert is your friend. He likes to play chess and you can call him at 555-8765 if you need to reach out.\\\"\\n\\n- **Output**:\\n  {\\n    \\\"vote\\\": 1,\\n    \\\"reason\\\": \\\"The response accurately matches all details provided in the JSON content.\\\"\\n  }\\n\\n**Guidelines**:\\n\\n- Ensure that every detail mentioned in the response is present in the relevant JSON content.\\n- If any information in the response is not supported by the JSON content or contradicts it, output a \\\"vote\\\" of 0.\\n- If the generated response contains additional reasonable inferences or supplemental information that do not contradict the JSON content, it can still be considered correct.\\n- If the relevant JSON file does not exist or no matching content is found, and the response indicates that the information is unknown, consider the response correct.\\n- Focus only on verifying the factual correctness based on the provided JSON content, without considering language simplicity or tone.\\n- Provide a brief reason for your decision, summarizing why the response is correct or incorrect in three sentences or less.\\n\"\n    },\n    {\n        \"role\": \"user\",\n        \"content\": \"When will the garden be on?\\n[\\n  {\\n    \\\"id\\\": \\\"facility_1\\\",\\n    \\\"name\\\": \\\"Dining Hall\\\",\\n    \\\"location\\\": \\\"First Floor, East Wing\\\",\\n    \\\"notes\\\": \\\"\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"facility_2\\\",\\n    \\\"name\\\": \\\"Recreation Room\\\",\\n    \\\"location\\\": \\\"Second Floor, East Wing\\\",\\n    \\\"notes\\\": \\\"Room number is E-201\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"facility_3\\\",\\n    \\\"name\\\": \\\"Garden\\\",\\n    \\\"location\\\": \\\"Ground Floor, South Side\\\",\\n    \\\"notes\\\": \\\"Opened from 10 to 10\\\"\\n  }\\n]\\n\\n\\nThe garden is open from 10 in the morning until 10 at night. It's located on the ground floor, south side of the building. Enjoy your time there!\\n\"\n    },\n    {\n        \"role\": \"assistant\",\n        \"content\": \"{\\n  \\\"vote\\\": 1,\\n  \\\"reason\\\": \\\"The response accurately reflects the information provided in the JSON content, stating the garden's hours and location correctly. Additionally, it encourages enjoyment, which is a reasonable inference that does not contradict the JSON details.\\\"\\n}\"\n    }\n]"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 108,
+      "type": "Note",
+      "pos": {
+        "0": -189,
+        "1": 451
+      },
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "Set your prompt here in \"user_prompt\""
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 84,
+      "type": "LLM",
+      "pos": {
+        "0": 2868,
+        "1": 310
+      },
+      "size": {
+        "0": 457.1405334472656,
+        "1": 555.3529663085938
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "link": 154,
+          "label": "model"
+        },
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "label": "images",
+          "shape": 7
+        },
+        {
+          "name": "extra_parameters",
+          "type": "DICT",
+          "link": null,
+          "label": "extra_parameters",
+          "shape": 7
+        },
+        {
+          "name": "system_prompt_input",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "system_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_prompt_input",
+          "type": "STRING",
+          "link": 129,
+          "widget": {
+            "name": "user_prompt_input"
+          },
+          "shape": 7
+        },
+        {
+          "name": "tools",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "tools"
+          },
+          "shape": 7
+        },
+        {
+          "name": "file_content",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "file_content"
+          },
+          "shape": 7
+        },
+        {
+          "name": "user_history",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "user_history"
+          },
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "assistant_response",
+          "type": "STRING",
+          "links": [
+            130
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "assistant_response"
+        },
+        {
+          "name": "history",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "history"
+        },
+        {
+          "name": "tool",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "label": "tool"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3,
+          "label": "image"
+        }
+      ],
+      "title": "UpdateJson Agent",
+      "properties": {
+        "Node name for S&R": "LLM"
+      },
+      "widgets_values": [
+        "**Prompt**:\n\nYou will act as an AI agent that generates updated json file content based on prompt.\n\nPlease update the specific field content in the JSON file based on the following input data. Output the full updated JSON file content, and include the file path and JSON node information description at the beginning of the response. The file path should be specified using the fields \"file\" and \"path\".\n\nPlease update the content pointed to by \"path\" based on the \"user_input\" and \"new_value\" information, and output the full updated JSON file content.\n\n**Input format**:\n{\n  \"user_input\": Original question from the user,\n  \"action\": Action to perform (can be ignored),\n  \"file\": Name of the JSON file,\n  \"path\": Path to the field in the JSON file that needs to be modified,\n  \"new_value\": New value for the field\n}\n{\n  Current content of the field in the corresponding JSON file\n}\n**Output format**:\n{\n  \"file\": Name of the JSON file,\n  \"path\":Path to the field in the JSON file that needs to be modified\n  \"new_content\":The updated content for the JSON file\n}\n**Example**:\n  **Input**:\n{\n  \"user_input\": \"My daughter told me her new number is 1234567\",\n  \"action\": \"update\",\n  \"file\": \"Personal_info\",\n  \"path\": \"Relations\",\n  \"new_value\": \"1234567\"\n}\n[\n  {\n    \"id\": \"relation_1\",\n    \"relation\": \"Daughter\",\n    \"name\": \"Emily Johnson\",\n    \"contact\": \"555-1234\",\n    \"notes\": \"Suffers from allergies\"\n  },\n  {\n    \"id\": \"relation_2\",\n    \"relation\": \"Son\",\n    \"name\": \"Michael Johnson\",\n    \"contact\": \"555-5678\",\n    \"notes\": \"Like sports\"\n  },\n  {\n    \"id\": \"relation_3\",\n    \"relation\": \"Primary Doctor\",\n    \"name\": \"Dr. Sarah Lee\",\n    \"contact\": \"555-4321\",\n    \"specialty\": \"Neurologist\",\n    \"notes\": \"\"\n  },\n  {\n    \"id\": \"relation_4\",\n    \"relation\": \"Friend\",\n    \"name\": \"Robert Williams\",\n    \"contact\": \"555-8765\",\n    \"notes\": \"Likes to play chess\"\n  }\n]\n\n\n**Output**:\n{\n  \"file\": \"Personal_info\",\n  \"path\": \"Relations\",\n  \"new_content\":[\n  {\n    \"id\": \"relation_1\",\n    \"relation\": \"Daughter\",\n    \"name\": \"Emily Johnson\",\n    \"contact\": \"1234567\",\n    \"notes\": \"Suffers from allergies\"\n  },\n  {\n    \"id\": \"relation_2\",\n    \"relation\": \"Son\",\n    \"name\": \"Michael Johnson\",\n    \"contact\": \"555-5678\",\n    \"notes\": \"Like sports\"\n  },\n  {\n    \"id\": \"relation_3\",\n    \"relation\": \"Primary Doctor\",\n    \"name\": \"Dr. Sarah Lee\",\n    \"contact\": \"555-4321\",\n    \"specialty\": \"Neurologist\",\n    \"notes\": \"\"\n  },\n  {\n    \"id\": \"relation_4\",\n    \"relation\": \"Friend\",\n    \"name\": \"Robert Williams\",\n    \"contact\": \"555-8765\",\n    \"notes\": \"Likes to play chess\"\n  }\n]\n}\n\n**Requirements**:\n1. **Update Logic**: Identify the field to modify based on the context of the \"user_input\". For example, recognize the field based on the description \"daughter's phone number\".\n2. **Keep Other Fields Intact**: Only update the specified field, and all other fields should remain unchanged.\n3. **Output Format**: Output the file path information first `{ \"file\": ..., \"path\": ... }`, then output the complete JSON file content.\n4. **Don't make up keys**: The modifications always happen on exisiting keys, if no suitable place to update the \"new_value\" content, simply reply \"There is no suitable directory to finish this update.\"",
+        "",
+        0.7,
+        "disable",
+        "disable",
+        "disable",
+        "enable",
+        1920,
+        "",
+        "",
+        "",
+        "",
+        "",
+        100,
+        "",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 103,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 8560,
+        "1": 23
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [
+            161
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "gpt-4o-mini",
+        "https://api.openai.com/v1",
+        "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",
+        false
+      ]
+    },
+    {
+      "id": 104,
+      "type": "LLM_api_loader",
+      "pos": {
+        "0": 9877,
+        "1": 23
+      },
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "CUSTOM",
+          "links": [
+            162
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "model"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLM_api_loader"
+      },
+      "widgets_values": [
+        "gpt-4o-mini",
+        "https://api.openai.com/v1",
+        "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",
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      71,
+      25,
+      0,
+      35,
+      0,
+      "STRING"
+    ],
+    [
+      72,
+      42,
+      0,
+      45,
+      0,
+      "STRING"
+    ],
+    [
+      76,
+      42,
+      1,
+      46,
+      0,
+      "STRING"
+    ],
+    [
+      80,
+      44,
+      0,
+      49,
+      0,
+      "STRING"
+    ],
+    [
+      81,
+      49,
+      0,
+      42,
+      4,
+      "STRING"
+    ],
+    [
+      82,
+      49,
+      0,
+      51,
+      0,
+      "STRING"
+    ],
+    [
+      83,
+      51,
+      0,
+      52,
+      0,
+      "STRING"
+    ],
+    [
+      89,
+      54,
+      0,
+      57,
+      0,
+      "STRING"
+    ],
+    [
+      90,
+      54,
+      1,
+      58,
+      0,
+      "STRING"
+    ],
+    [
+      91,
+      52,
+      0,
+      59,
+      0,
+      "STRING"
+    ],
+    [
+      93,
+      52,
+      0,
+      54,
+      4,
+      "STRING"
+    ],
+    [
+      104,
+      35,
+      0,
+      65,
+      0,
+      "STRING"
+    ],
+    [
+      105,
+      65,
+      0,
+      62,
+      0,
+      "STRING"
+    ],
+    [
+      112,
+      67,
+      0,
+      54,
+      0,
+      "CUSTOM"
+    ],
+    [
+      117,
+      52,
+      0,
+      73,
+      4,
+      "STRING"
+    ],
+    [
+      118,
+      52,
+      0,
+      72,
+      4,
+      "STRING"
+    ],
+    [
+      119,
+      73,
+      0,
+      77,
+      0,
+      "STRING"
+    ],
+    [
+      120,
+      72,
+      0,
+      78,
+      0,
+      "STRING"
+    ],
+    [
+      121,
+      77,
+      0,
+      70,
+      0,
+      "STRING"
+    ],
+    [
+      122,
+      57,
+      0,
+      70,
+      1,
+      "STRING"
+    ],
+    [
+      123,
+      78,
+      0,
+      70,
+      2,
+      "STRING"
+    ],
+    [
+      124,
+      44,
+      0,
+      70,
+      3,
+      "STRING"
+    ],
+    [
+      125,
+      70,
+      0,
+      79,
+      0,
+      "STRING"
+    ],
+    [
+      126,
+      70,
+      1,
+      80,
+      0,
+      "STRING"
+    ],
+    [
+      128,
+      65,
+      1,
+      83,
+      0,
+      "STRING"
+    ],
+    [
+      129,
+      83,
+      0,
+      84,
+      4,
+      "STRING"
+    ],
+    [
+      130,
+      84,
+      0,
+      85,
+      0,
+      "STRING"
+    ],
+    [
+      132,
+      45,
+      0,
+      70,
+      4,
+      "STRING"
+    ],
+    [
+      133,
+      45,
+      0,
+      52,
+      1,
+      "STRING"
+    ],
+    [
+      135,
+      85,
+      0,
+      87,
+      0,
+      "STRING"
+    ],
+    [
+      136,
+      87,
+      0,
+      88,
+      0,
+      "STRING"
+    ],
+    [
+      137,
+      62,
+      0,
+      89,
+      0,
+      "STRING"
+    ],
+    [
+      138,
+      88,
+      0,
+      89,
+      1,
+      "STRING"
+    ],
+    [
+      139,
+      89,
+      0,
+      49,
+      1,
+      "STRING"
+    ],
+    [
+      150,
+      23,
+      0,
+      25,
+      0,
+      "CUSTOM"
+    ],
+    [
+      154,
+      102,
+      0,
+      84,
+      0,
+      "CUSTOM"
+    ],
+    [
+      155,
+      68,
+      0,
+      42,
+      0,
+      "CUSTOM"
+    ],
+    [
+      156,
+      79,
+      0,
+      105,
+      0,
+      "STRING"
+    ],
+    [
+      157,
+      80,
+      0,
+      105,
+      1,
+      "STRING"
+    ],
+    [
+      158,
+      105,
+      0,
+      100,
+      1,
+      "STRING"
+    ],
+    [
+      159,
+      99,
+      4,
+      25,
+      4,
+      "STRING"
+    ],
+    [
+      160,
+      99,
+      4,
+      44,
+      0,
+      "STRING"
+    ],
+    [
+      161,
+      103,
+      0,
+      73,
+      0,
+      "CUSTOM"
+    ],
+    [
+      162,
+      104,
+      0,
+      72,
+      0,
+      "CUSTOM"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Input",
+      "bounding": [
+        -654,
+        75,
+        542,
+        621
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Natural Language Response Generation",
+      "bounding": [
+        5050,
+        -121,
+        1235,
+        1063
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "RAG",
+      "bounding": [
+        1979,
+        -339,
+        2506,
+        1330
+      ],
+      "color": "#b06634",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Intention Node",
+      "bounding": [
+        583,
+        -91,
+        1325,
+        902
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Validation Board",
+      "bounding": [
+        6992,
+        -186,
+        4015,
+        1183
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Output",
+      "bounding": [
+        8337,
+        1046,
+        2228,
+        730
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7513148009015783,
+      "offset": [
+        607.0020141614286,
+        24.206388782395365
+      ]
+    }
+  },
+  "version": 0.4
+}
