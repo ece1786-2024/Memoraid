@@ -1,0 +1,90 @@
+{
+  "Schedule": [
+    {
+      "id": 1,
+      "date": "2024-11-27",
+      "activities": [
+        {
+          "id": 1,
+          "type": "Hygiene",
+          "details": "Wash, brush teeth, get dressed",
+          "time": "08:00"
+        },
+        {
+          "id": 2,
+          "type": "Medication",
+          "details" : ["Vitamin D", "Blood Pressure Pill", "Pain Relief"],
+          "dosage": [1,1,1],
+          "time": "08:30"
+        },
+        {
+          "id": 3,
+          "type": "Meal",
+          "name": "Breakfast",
+          "details": "Prepare and eat breakfast together",
+          "time": "08:35"
+        },
+        {
+          "id": 4,
+          "type": "Therapy",
+          "details": "Speech Therapy",
+          "time": "09:45"
+        },
+        {
+          "id": 5,
+          "type": "Meal",
+          "name": "Lunch",
+          "details": "Prepare and eat lunch together",
+          "time": "12:30"
+        },
+        {
+          "id": 6,
+          "type": "Medication",
+          "details" : ["Vitamin D", "Blood Pressure Pill", "Pain Relief"],
+          "dosage": [1, 1, 1],
+          "time": "13:00"
+        },
+        {
+          "id": 7,
+          "type": "Rest",
+          "details": "Take a short nap or relax",
+          "time": "14:00"
+        },
+        {
+          "id": 8,
+          "type": "Therapy",
+          "details": "Drawing therapy",
+          "time": "14:30"
+        },
+        
+        {
+          "id": 9,
+          "type": "Medication",
+          "details" : ["Vitamin D", "Blood Pressure Pill", "Pain Relief"],
+          "dosage": [1, 1, 1],
+          "time": "15:45"
+        },
+        {
+          "id": 10,
+          "type": "Meal",
+          "name": "Dinner",
+          "details": "Prepare and eat dinner, clean up the kitchen",
+          "time": "15:46"
+        },
+        {
+          "id": 11,
+          "type": "Hygiene",
+          "details": "Take a bath, get ready for bed",
+          "time": "23:21"
+        },
+        {
+          "id": 9,
+          "type": "Medication",
+          "details" : ["Vitamin D", "Blood Pressure Pill", "Pain Relief"],
+          "dosage": [1, 1, 1],
+          "time": "23:46"
+        }
+      ]
+    }
+  ]
+}

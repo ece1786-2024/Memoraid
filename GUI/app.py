@@ -8,7 +8,8 @@ from shiny import App, ui
 from utils import *
 
 from openai import OpenAI
-
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../Scheduler')))
+from scheduler import create_scheduler
 #comfyUI API的调用 / comfyUI API call
 import comfyUIAPI
 comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
@@ -41,6 +42,26 @@ def server(input, output, session):
     ## init log
     conversations = {}  # Dictionary to store conversations
     current_conversation=initialize_conversation()
+    # Create an async queue for messages
+    message_queue = asyncio.Queue()
+    # Create an event loop for the callback
+    loop = asyncio.get_event_loop()
+    async def handle_reminder_message(message):
+        """
+        Async function to handle incoming reminder messages
+        """
+        await message_queue.put(message)
+    def callback_bridge(msg):
+        """
+        Bridge function to safely handle callbacks from the scheduler thread
+        """
+        asyncio.run_coroutine_threadsafe(handle_reminder_message(msg), loop)
+    scheduler = create_scheduler(
+    "JSON files/schedule.json", 
+    "JSON files/daily_care.json",
+    callback_bridge
+    )
+    
     ##
     async def save_and_clear_chat():
         nonlocal current_conversation
@@ -65,34 +86,48 @@ def server(input, output, session):
         ###################################################
         ### changed to comfy ui pipline API
         #_,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, current_conversation["messages"])
-        agent_res_msg = comfyAPI.call(
-            model_name="original_api",
-            messages=current_conversation["messages"],
-            max_tokens=150,
-        )
-        await chat.append_message(agent_res_msg)
-        current_conversation['messages'].append({'role': 'assistant', 'content': agent_res_msg})
+        # agent_res_msg = comfyAPI.call(
+        #     model_name="original_api",
+        #     messages=current_conversation["messages"],
+        #     max_tokens=150,
+        # )
+        #await chat.append_message(agent_res_msg)
+        #current_conversation['messages'].append({'role': 'assistant', 'content': agent_res_msg})
         last_interaction_time=time.time()
 
     # Background task to send reminders for scheduled events
     async def send_good_messages():
         nonlocal last_interaction_time, current_conversation
         try:
+            # Start the scheduler
+            scheduler.run_scheduler()
+            
             while True:
-                ########################################
-                ### Modify for scheduled events reminder 
-                await asyncio.sleep(33)
-                await save_and_clear_chat()
-                agent_reminder_msg = "Take some vitaminC pills"
-                await chat.append_message(agent_reminder_msg)
-                # current_conversation=initialize_conversation()
-                if current_conversation['start_time']==None:
-                    current_conversation['start_time'] = get_time()
-                current_conversation['messages'].append({'role': 'assistant', 'content': "Agent proactively reminded:\n"+agent_reminder_msg})
-                last_interaction_time=time.time()
+                try:
+                    # Wait for messages from the queue
+                    reminder_msg = await message_queue.get()
+                    
+                    # Send to UI
+                    await chat.append_message(reminder_msg)
+                    
+                    if current_conversation['start_time'] is None:
+                        current_conversation['start_time'] = get_time()
+                    
+                    current_conversation['messages'].append({
+                        'role': 'assistant',
+                        'content': f"Agent proactively reminded:\n{reminder_msg}"
+                    })
+                    last_interaction_time = time.time()
+                    
+                    # Mark the task as done
+                    message_queue.task_done()
+                    
+                except asyncio.CancelledError:
+                    break
+
         except asyncio.CancelledError:
-            # raise KeyboardInterrupt("error")
-            pass  # Handle task cancellation gracefully
+            scheduler.stop()
+            pass
     ##
     # Background task to check for user inactivity
     async def check_inactivity():
@@ -124,3 +159,5 @@ def server(input, output, session):
             pass
 
 app = App(app_ui, server)
+if __name__ == "__main__":
+    app.run()

@@ -1,0 +1,33 @@
+{
+    "date": "2024-11-27",
+    "medication": 
+       [
+        {
+          "name": "Vitamin D",
+          "dosage": 1,
+          "time": ["08:30", "15:00", "23:00"]
+        },
+        {
+          "name": "Blood Pressure Pill",
+          "dosage": 1,
+          "time": ["9:45", "15:20", "23:00"]
+        },
+        {
+          "name": "Pain Relief",
+          "dosage": 1,
+          "time": ["9:00", "11:20", "23:00"]
+        }
+      ]
+    ,
+    "Therapy":[
+      {
+        "name": "Speech Therapy",
+        "time": []
+      },
+      {
+        "name": "Drawing Therapy",
+        "time":[]
+      }
+    ]
+    
+  }
