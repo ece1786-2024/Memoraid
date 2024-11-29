@@ -12,7 +12,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../Sche
 from scheduler import create_scheduler
 #comfyUI API的调用 / comfyUI API call
 import comfyUIAPI
-comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
+#comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
 
 ##### temp model settings
 models = ["gpt-4o-2024-05-13", "gpt-4o-2024-08-06", "gpt-4o-2024-11-20", "gpt-4o-mini-2024-07-18"]
@@ -108,7 +108,7 @@ def server(input, output, session):
                     reminder_msg = await message_queue.get()
                     
                     # Send to UI
-                    await chat.append_message(reminder_msg)
+                    await chat.append_message("Reminder: " + reminder_msg)
                     
                     if current_conversation['start_time'] is None:
                         current_conversation['start_time'] = get_time()

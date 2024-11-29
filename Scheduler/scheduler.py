@@ -50,7 +50,7 @@ class SchedulerThread:
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": "You are a caregiver for alzheimer's patients that formats JSON activity descriptions into natural language to remind the patient."},
+                    {"role": "system", "content": "Your job is to transfer json to a natural language sentence to remind people."},
                     {"role": "user", "content": prompt}
                 ]
             )
@@ -84,10 +84,10 @@ Follow this output  format Reminder: "Please take your "med name" "num "pill and
     def agent_therapy_activity(self,activity,past_therapies):
         
         content = f"""
-        passed event: {json.dumps(activity, indent=4)}
-        schedule event: {json.dumps(past_therapies, indent=4)}
+        passed event: {json.dumps(past_therapies, indent=4)}
+        schedule event: {json.dumps(activity, indent=4)}
         """
-        system_message = "Past event means the therapy has been done, if the scheduled event has the same one in the past event and the past event has time list not empty, Then return None (with not punctuation or space) else you can return a reminder in natural language for this event."
+        system_message = "Past event means the therapy has been done, if the scheduled event has the same one in the past event and the past event has time within 3 hours before the schedule event time, then return None (with not punctuation or space) else you can return a reminder in natural language for this event. Do not include reminder: at the start."
         
         try:
             response = client.chat.completions.create(
@@ -97,6 +97,7 @@ Follow this output  format Reminder: "Please take your "med name" "num "pill and
                     {"role": "user", "content": content}
                 ]
             )
+            print(content)
             return response.choices[0].message.content.strip()
         except Exception as e:
             return f"gpt_generate_description Error generating description: {e}"
@@ -105,7 +106,7 @@ Follow this output  format Reminder: "Please take your "med name" "num "pill and
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": "Please extract reminder sentences out of the content provided and rewrite the reminder to proper grammarly correct friendly sentences with punctuation for the patient and do not forget dosage and time in the reminder. If the final result is None. Return None again without any punctuation or space. These are all restricted requirements."},
+                    {"role": "system", "content": "Please extract reminder sentences out of the content and combine or reform the reminders into a friendly sentence sentencce and split medinces with commas and put dosage in square bracket like [1 pill]. Do not forget dosage and time in this sentence. If the final result is None. Return None again without any punctuation or space. These are all restricted requirements."},
                     {"role": "user", "content": intermediate_result}
                 ]
             )
@@ -137,6 +138,8 @@ Follow this output  format Reminder: "Please take your "med name" "num "pill and
         elif activity_type == "Therapy":
             # Extract therapy information from daily care and call the therapy agent function
             past_therapies = daily_care.get("Therapy", [])
+            print( past_therapies)
+            print( activity)
             therapy_output= self.agent_therapy_activity(activity, past_therapies)
             print(therapy_output)
             return therapy_output
