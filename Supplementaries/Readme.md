@@ -24,9 +24,9 @@ Although it is possible to convert the project to use raw Python libraries, this
 6. **Run ComfyUI Again**: Launch `run_nvidia_gpu.bat` again, and the ComfyUI GUI should now display.
 
 ### Running the Workflow
-1. **Load Workflow**: Drag and drop the `Memoraid Update&Query Workflow.json` from the `Supplementaries/Workflows` folder into the ComfyUI GUI.
-2. **Configure Database Directory**: Update the database directory paths as needed within the workflow.
-3. **Run Workflow**: Click "Queue Prompt" on the right side of the screen to execute the workflow.
+1. **Load Workflow**: Drag and drop the `Memoraid Update&Query Workflow.json` from the `Supplementaries/Workflows` folder into the ComfyUI GUI. (PS: Please Use your own API key.)
+3. **Configure Database Directory**: Update the database directory paths as needed within the workflow.
+4. **Run Workflow**: Click "Queue Prompt" on the right side of the screen to execute the workflow.
 
 ### API Setup for Local Access
 If you wish to run the workflow as an API on your local machine, follow these steps:
