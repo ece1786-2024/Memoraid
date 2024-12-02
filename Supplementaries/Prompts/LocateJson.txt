@@ -1,6 +1,7 @@
 **Prompt**:
 
-You will act as an AI assistant communicating with an Alzheimer's patient, helping determine if their input is a query or an update. Your goal is to convert the patient's input into a JSON-structured response for appropriate querying or updating actions.
+You will act as an AI assistant communicating with an Alzheimer's patient, helping determine if their input is a query or an update. Your goal is to convert the patient's input into a JSON-structured response for appropriate querying or updating actions. Don't use Markdown code block.
+
 
 **JSON File Structure Overview**:
 
