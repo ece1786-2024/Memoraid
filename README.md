@@ -1,7 +1,8 @@
 # Memoraid: A Virtual Assistant for Alzheimer’s Patients
 <!-- ![Chat Example](./imgs/UI_3.png) -->
-<img src="./imgs/UI_3.png" alt="Chat Example" width="60%"/>
-
+<div align="center">
+    <img src="./imgs/UI_3.png" alt="Chat Example" width="70%"/>
+</div>
 
 **Memoraid** is a multi-agent virtual assistant designed to support individuals in the early to mid-stages of Alzheimer’s disease.  This project seeks to leverage the semantic understanding capabilities of LLMs to address challenges faced byAlzheimer’s patients. We propose an LLM-based multi-agent system enhanced with a dynamic personal profiling database to deliver personalized and effec tive support. This system aims to provide accurate, factual answers to common questions while assisting in managing daily routines with instructions, thereby reducing the caregiving burden.
 
@@ -39,11 +40,17 @@ Our system supports two types of patient interactions:
     – Passive: Patient initiates conversation to request information (i.e. details ofamenities of their care facility).
     – Proactive: The system proactively sends reminders based on a predefined schedule (i.e. prompting the patient to follow therapy routine)
 
-![passive interaction](imgs/passive_chat.png)
+<div align="center">
+    <img src="./imgs/passive_chat.png" alt="passive interaction" width="80%"/>
+</div>
+<!-- ![passive interaction](imgs/passive_chat.png) -->
 
  *Figure 1: Passive interaction workflow.*
 
-![proactive interaction](imgs/reminder.png)
+<div align="center">
+    <img src="./imgs/reminder.png" alt="proactive interaction" width="80%"/>
+</div>
+<!-- ![proactive interaction](imgs/reminder.png) -->
 
  *Figure 2: Proactive interaction workflow.*
 
