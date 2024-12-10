@@ -45,8 +45,9 @@ You can select the desired mode by modifying the `agent_mode` variable in the sc
 agent_mode = ["pure_chatgpt", "sys_api"][1]
 ```
 
-**Note:** 
-User can access external knowledge beyong the RAG system from ChatGPT. This is only available from `pure_chatgpt` mode, as the accuracy of the information cannot be validated.
+**Note:**
+ Users can access external knowledge beyond the RAG system through ChatGPT. This feature is only available in the **`pure_chatgpt`** mode, as the accuracy of the information cannot be validated.
+
 ![External Knowledge](../imgs/UI_ext_kw.png)
 ------
 
