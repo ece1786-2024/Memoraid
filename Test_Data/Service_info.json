@@ -1,0 +1,156 @@
+{
+    "facility": [
+        {
+            "id": "facility_1",
+            "name": "Library",
+            "location": "First Floor, North Wing",
+            "notes": "Quiet zone; open from 8:00 AM to 8:00 PM"
+        },
+        {
+            "id": "facility_2",
+            "name": "Gymnasium",
+            "location": "Second Floor, West Wing",
+            "notes": "Room number is W-210; equipment includes treadmills, bikes, and weights"
+        },
+        {
+            "id": "facility_3",
+            "name": "Cafeteria",
+            "location": "Ground Floor, Central Area",
+            "notes": "Offers meals and snacks; open from 6:30 AM to 8:30 PM"
+        },
+        {
+            "id": "facility_4",
+            "name": "Swimming Pool",
+            "location": "Ground Floor, South Wing",
+            "notes": "Open from 9:00 AM to 6:00 PM; lifeguard on duty"
+        },
+        {
+            "id": "facility_5",
+            "name": "Art Studio",
+            "location": "Third Floor, East Wing",
+            "notes": "Room number is E-305; hosts art classes twice a week"
+        }
+    ],
+    "services": [
+        {
+            "id": "service_1",
+            "name": "Meal Delivery Service",
+            "availability": "7 days a week, 8:00 AM to 7:00 PM",
+            "notes": "Customized meals available for dietary needs, including diabetic and low-sodium options."
+        },
+        {
+            "id": "service_2",
+            "name": "Housekeeping Service",
+            "availability": "Weekly for each resident room",
+            "notes": "Includes bed linen changes, dusting, and vacuuming."
+        },
+        {
+            "id": "service_3",
+            "name": "Medical Assistance",
+            "availability": "24/7 on-site nursing staff",
+            "notes": "Emergency response and routine checkups available."
+        },
+        {
+            "id": "service_4",
+            "name": "Transportation Service",
+            "availability": "Monday to Friday, 8:00 AM to 5:00 PM",
+            "notes": "Free transportation for medical appointments and local shopping trips."
+        },
+        {
+            "id": "service_5",
+            "name": "Fitness Classes",
+            "availability": "Monday, Wednesday, Friday; 10:00 AM to 11:00 AM",
+            "notes": "Yoga, aerobics, and strength-building exercises led by certified instructors."
+        },
+        {
+            "id": "service_6",
+            "name": "Group Therapy Sessions",
+            "availability": "Thursday afternoons, 2:00 PM to 3:30 PM",
+            "notes": "Support groups for stress management, grief counseling, and more."
+        },
+        {
+            "id": "service_7",
+            "name": "Personal Care Assistance",
+            "availability": "On-demand",
+            "notes": "Help with bathing, dressing, and other daily activities."
+        },
+        {
+            "id": "service_8",
+            "name": "Technology Assistance",
+            "availability": "By appointment, Monday to Friday",
+            "notes": "Support for using smartphones, tablets, and computers."
+        },
+        {
+            "id": "service_9",
+            "name": "Social Events Planning",
+            "availability": "Monthly schedule",
+            "notes": "Organizes movie nights, holiday parties, and hobby clubs."
+        },
+        {
+            "id": "service_10",
+            "name": "Laundry Service",
+            "availability": "Twice a week per resident",
+            "notes": "Includes washing, drying, and folding of clothes and linens."
+        },
+        {
+            "id": "service_11",
+            "name": "Pet Therapy",
+            "availability": "Every Wednesday, 3:00 PM to 4:00 PM",
+            "notes": "Residents can interact with trained therapy animals."
+        },
+        {
+            "id": "service_12",
+            "name": "On-Site Pharmacy",
+            "availability": "Monday to Saturday, 9:00 AM to 6:00 PM",
+            "notes": "Prescription refills and consultations available."
+        },
+        {
+            "id": "service_13",
+            "name": "Wellness Workshops",
+            "availability": "Monthly, third Saturday",
+            "notes": "Topics include nutrition, mental health, and disease prevention."
+        },
+        {
+            "id": "service_14",
+            "name": "Reading Club Meetings",
+            "availability": "Tuesday evenings, 6:00 PM to 7:30 PM",
+            "notes": "Hosted in the library; book selections rotate monthly."
+        },
+        {
+            "id": "service_15",
+            "name": "Art Classes",
+            "availability": "Twice weekly, Tuesday and Thursday, 4:00 PM to 6:00 PM",
+            "notes": "Painting, sculpting, and other creative activities."
+        },
+        {
+            "id": "service_16",
+            "name": "Memory Care Activities",
+            "availability": "Daily, 10:00 AM to 11:30 AM",
+            "notes": "Puzzles, music therapy, and reminiscence sessions for cognitive stimulation."
+        },
+        {
+            "id": "service_17",
+            "name": "Spiritual Support",
+            "availability": "Sunday mornings, 9:00 AM to 10:30 AM",
+            "notes": "Weekly interfaith services and pastoral counseling."
+        },
+        {
+            "id": "service_18",
+            "name": "Hairdressing and Grooming",
+            "availability": "By appointment, Monday to Friday",
+            "notes": "Haircuts, styling, and grooming services available on-site."
+        },
+        {
+            "id": "service_19",
+            "name": "Gardening Club",
+            "availability": "Saturday mornings, 8:00 AM to 10:00 AM",
+            "notes": "Residents collaborate on maintaining the community garden."
+        },
+        {
+            "id": "service_20",
+            "name": "Music Therapy Sessions",
+            "availability": "Fridays, 3:00 PM to 4:30 PM",
+            "notes": "Group sessions focused on relaxation and emotional expression through music."
+        }
+    ]
+}

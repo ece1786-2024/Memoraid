@@ -11,25 +11,13 @@ from openai import OpenAI
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../Scheduler')))
 from scheduler import create_scheduler
 
-# two types of chat available, `pure_chatgpt` interacts directly with chatgpt, `sys_api` interacts
+# two types of chat available, `baseline` interacts directly with chatgpt, `sys_api` interacts
 # with our system
-agent_mode = ["pure_chatgpt", "sys_api"][1]
+agent_mode = ["baseline", "sys_api"][0]
 #comfyUI API call
 if agent_mode == "sys_api":
     import comfyUIAPI
     comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
-
-# chat type by agent mode
-def basic_chat_completion(api_key, openai_params, conv_prompt, agent_mode):
-    if agent_mode == "sys_api":
-        agent_res_msg = comfyAPI.call(
-                model_name="original_api",
-                messages=conv_prompt,
-                max_tokens=150,
-            )
-    elif agent_mode == "pure_chatgpt":
-         _,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, conv_prompt)
-    return agent_res_msg
 
 
 ##### temp model settings
@@ -40,6 +28,44 @@ api_key = "sk-proj-a1rJBUBaAvngAZ439-ArfMIathRmPcUwPeuj6_WRGGPAzWHLQcPa4FJd35n4a
 MAIN_CONVLOG_PATH  = "./Conv_Log/main.json"
 os.makedirs(os.path.dirname(MAIN_CONVLOG_PATH), exist_ok=True)
 
+
+## set up user profile path
+TEST_DATA_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__),"../Test_Data"))
+# database information
+pers_info_json = load_json(os.path.join(TEST_DATA_ROOT, "Personal_info.json"))
+serv_info_json = load_json(os.path.join(TEST_DATA_ROOT, "Service_info.json"))
+
+
+### set up prompt for baseline model
+sys_prompt = f"""
+You are a helpful assistant. You task is to effectively communicate with an Alzheimer's patient (user), answering user's questions with given context.
+
+The following are provided context regarding the user:
+Pseronal information regarding the user:
+{json.dumps(pers_info_json)}
+Service information provided by the care provider:
+{json.dumps(serv_info_json)}
+
+Answer the following question:
+"""
+sys_msg = format_msg_role("system", sys_prompt)
+
+
+# chat type by agent mode
+def basic_chat_completion(api_key, openai_params, conv_prompt, agent_mode):
+    if agent_mode == "sys_api":
+        agent_res_msg = comfyAPI.call(
+                model_name="original_api",
+                messages=conv_prompt,
+                max_tokens=150,
+            )
+    elif agent_mode == "baseline":
+         temp_conv_prompt = [sys_msg] + conv_prompt
+         _,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, temp_conv_prompt)
+    return agent_res_msg
+
+
+#
 ######## web ui setup
 app_ui = ui.page_fluid(
     ui.panel_title("Memoraid"),

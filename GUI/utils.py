@@ -15,7 +15,13 @@ def basic_openai_chat_completion(api_key, openai_params, conv_prompt):
     return response, answer_msg
 
 
+def load_json(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file: 
+        data = json.load(file) 
+    return data
 
+def format_msg_role(role, prompt):
+    return {"role": role, "content": prompt}
 
 # get time
 def get_time()->str:

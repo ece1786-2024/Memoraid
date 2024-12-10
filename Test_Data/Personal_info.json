@@ -1,0 +1,212 @@
+{
+    "Private": {
+        "id": "private_info",
+        "name": "Samuel Carter",
+        "gender": "Male",
+        "age": 68,
+        "occupation": "Retired Engineer",
+        "interests": ["Fishing", "Cooking", "Traveling", "Photography", "Gardening", "Reading Historical Novels", "Woodworking"]
+    },
+    "medical_info": {
+        "allergies": ["Pollen", "Dust", "Penicillin"],
+        "disease_stage": {
+            "Mild Cognitive Impairment": "Early-stage",
+            "Arthritis": "Moderate",
+            "Diabetes": "Well-controlled"
+        },
+        "special_notes": [
+            "Blood pressure is stabilized with medication.",
+            "MCI progression monitored through biannual cognitive tests.",
+            "Requires hearing aids for moderate hearing loss.",
+            "CPAP therapy effectively managing sleep apnea symptoms.",
+            "Dietary restrictions implemented for managing gout and GERD."
+        ]},
+    "Relations": [
+        {
+            "id": "relation_1",
+            "relation": "Spouse",
+            "name": "Lillian Carter",
+            "contact": "555-9012",
+            "notes": "Enjoys painting; often joins Samuel on fishing trips"
+        },
+        {
+            "id": "relation_2",
+            "relation": "Son",
+            "name": "David Carter",
+            "contact": "555-3456",
+            "notes": "Plays the guitar; visits every weekend"
+        },
+        {
+            "id": "relation_3",
+            "relation": "Daughter",
+            "name": "Sophia Carter",
+            "contact": "555-2345",
+            "notes": "Works as a graphic designer; shares an interest in photography"
+        },
+        {
+            "id": "relation_4",
+            "relation": "Primary Doctor",
+            "name": "Dr. Olivia Moore",
+            "contact": "555-7890",
+            "specialty": "Cardiologist",
+            "notes": "Monitors Samuel’s heart condition"
+        },
+        {
+            "id": "relation_5",
+            "relation": "Friend",
+            "name": "James O'Brien",
+            "contact": "555-6543",
+            "notes": "Helps with yard work; enjoys gardening discussions"
+        },
+        {
+            "id": "relation_6",
+            "relation": "Brother",
+            "name": "Thomas Carter",
+            "contact": "555-1111",
+            "notes": "Retired professor; enjoys woodworking with Samuel"
+        },
+        {
+            "id": "relation_7",
+            "relation": "Neighbor",
+            "name": "Anna Ramirez",
+            "contact": "555-2222",
+            "notes": "Bakes cookies for neighborhood events; shares a love for cooking"
+        },
+        {
+            "id": "relation_8",
+            "relation": "Friend",
+            "name": "Robert Harrison",
+            "contact": "555-3333",
+            "notes": "Longtime fishing companion"
+        },
+        {
+            "id": "relation_9",
+            "relation": "Cousin",
+            "name": "Martha Reynolds",
+            "contact": "555-4444",
+            "notes": "Organizes family reunions; loves historical novels"
+        }
+    ],
+    "medical_history":[
+        {
+            "condition": "Hypertension",
+            "diagnosis_date": "2002-04-15",
+            "medication": ["Lisinopril 20mg daily"],
+            "notes": "Blood pressure is monitored monthly by Dr. Olivia Moore."
+        },
+        {
+            "condition": "Type 2 Diabetes",
+            "diagnosis_date": "2010-08-23",
+            "medication": ["Metformin 500mg twice daily"],
+            "notes": "Managed with medication and a controlled diet."
+        },
+        {
+            "condition": "Heart Arrhythmia",
+            "diagnosis_date": "2015-05-30",
+            "medication": ["Amiodarone 200mg daily"],
+            "notes": "Regularly monitored with EKG tests."
+        },
+        {
+            "condition": "Mild Cognitive Impairment (MCI)",
+            "diagnosis_date": "2020-11-10",
+            "medication": ["Donepezil 10mg daily"],
+            "notes": "Early-stage memory issues detected; advised mental exercises."
+        },
+        {
+            "condition": "Arthritis",
+            "diagnosis_date": "2018-02-14",
+            "medication": ["Ibuprofen 400mg as needed"],
+            "notes": "Affects the hands and knees; physical therapy sessions recommended."
+        },
+        {
+            "condition": "Cataracts",
+            "diagnosis_date": "2019-07-05",
+            "treatment": "Cataract surgery performed in 2021 on the left eye.",
+            "notes": "Right eye remains under observation."
+        },
+        {
+            "condition": "Seasonal Allergies",
+            "diagnosis_date": "1995-03-12",
+            "medication": ["Loratadine 10mg as needed"],
+            "notes": "Triggers include pollen and dust."
+        },
+        {
+            "condition": "Sleep Apnea",
+            "diagnosis_date": "2017-10-25",
+            "treatment": "CPAP therapy",
+            "notes": "Uses a CPAP machine nightly."
+        },
+        {
+            "condition": "Chronic Back Pain",
+            "diagnosis_date": "2012-06-18",
+            "treatment": "Physical therapy and pain management",
+            "notes": "Pain exacerbated by prolonged sitting."
+        },
+        {
+            "condition": "Kidney Stones",
+            "diagnosis_date": "2008-09-04",
+            "treatment": "Lithotripsy performed in 2008",
+            "notes": "Advised to increase water intake to prevent recurrence."
+        },
+        {
+            "condition": "Gout",
+            "diagnosis_date": "2016-01-22",
+            "medication": ["Allopurinol 300mg daily"],
+            "notes": "Managed with dietary restrictions."
+        },
+        {
+            "condition": "GERD (Gastroesophageal Reflux Disease)",
+            "diagnosis_date": "2013-03-15",
+            "medication": ["Omeprazole 20mg daily"],
+            "notes": "Advised to avoid spicy and acidic foods."
+        },
+        {
+            "condition": "Hearing Loss",
+            "diagnosis_date": "2021-09-18",
+            "treatment": "Hearing aids fitted in both ears.",
+            "notes": "Moderate hearing loss detected."
+        },
+        {
+            "condition": "Asthma",
+            "diagnosis_date": "1990-07-11",
+            "medication": ["Albuterol inhaler as needed"],
+            "notes": "Well-controlled with minimal flare-ups."
+        },
+        {
+            "condition": "Chronic Sinusitis",
+            "diagnosis_date": "2005-11-28",
+            "treatment": "Sinus surgery performed in 2006",
+            "notes": "Occasional symptoms managed with saline rinses."
+        },
+        {
+            "condition": "High Cholesterol",
+            "diagnosis_date": "2001-12-01",
+            "medication": ["Atorvastatin 40mg daily"],
+            "notes": "Lipid profile checked biannually."
+        },
+        {
+            "condition": "Shingles",
+            "diagnosis_date": "2019-03-06",
+            "treatment": "Antiviral therapy",
+            "notes": "Received the shingles vaccine in 2021 to prevent recurrence."
+        },
+        {
+            "condition": "Prostate Enlargement (BPH)",
+            "diagnosis_date": "2018-05-20",
+            "medication": ["Tamsulosin 0.4mg daily"],
+            "notes": "Regular urological follow-ups recommended."
+        },
+        {
+            "condition": "Vitamin D Deficiency",
+            "diagnosis_date": "2015-08-19",
+            "treatment": "Vitamin D3 supplementation",
+            "notes": "Takes 2000 IU daily."
+        },
+        {
+            "condition": "Osteoporosis",
+            "diagnosis_date": "2022-01-15",
+            "medication": ["Alendronate 70mg weekly"],
+            "notes": "Bone density scans performed every two years."
+        }
+    ]
+}

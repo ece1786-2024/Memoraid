@@ -1,5 +1,5 @@
 # Memoraid: A Virtual Assistant for Alzheimer’s Patients
-<!-- ![Passive interaction](./imgs/UI_1.png) -->
+![Chat Example](./imgs/UI_3.png)
 
 **Memoraid** is a multi-agent virtual assistant designed to support individuals in the early to mid-stages of Alzheimer’s disease.  This project seeks to leverage the semantic understanding capabilities of LLMs to address challenges faced byAlzheimer’s patients. We propose an LLM-based multi-agent system enhanced with a dynamic personal profiling database to deliver personalized and effec tive support. This system aims to provide accurate, factual answers to common questions while assisting in managing daily routines with instructions, thereby reducing the caregiving burden.
 
@@ -54,8 +54,10 @@ To experience the full capabilities of **Memoraid**, follow the setup instructio
 
 1. **[GUI Setup](GUI/)**
    - Includes the user interface (UI) and reminder system.
+   - Note: If baseline_mode is selected, ComfuUI API is not required. Refer to [Agent Mode Selection](GUI/ReadMe.md)
 2. **[ComfyUI Setup](Supplementaries/)**
    - Enables passive interaction capabilities.
+   
 
 Both components must be set up correctly to access all features provided by the demo. 
 
