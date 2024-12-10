@@ -40,10 +40,11 @@ Our system supports two types of patient interactions:
 ![passive interaction](imgs/passive_chat.png)
 
  *Figure 1: Passive interaction workflow.*
- 
+
 ![proactive interaction](imgs/reminder.png)
 
  *Figure 2: Proactive interaction workflow.*
+ 
 ---
 
 ## Demo
