@@ -11,21 +11,21 @@
 
 This section provides an overview of the key folders and files in the repository, along with their purposes and contents.
 
-- **Supplementaries**
+- **Supplementaries: **
    Implementation of passive interaction as an API.
    Contains prompts used for agents in the passive interaction system.
-- **Scheduler**
+- **Scheduler: **
    Implementation of proactive interaction.
    Includes prompts used for agents in this system.
-- **GUI**
+- **GUI: **
    Shiny implementation of the chat user interface.
-- **Test_Data**
+- **Test_Data: **
    Contains synthetic QA datasets and corresponding user profiles.
    Includes prompts used to generate the QA datasets.
-- **eval_results**
+- **eval_results: **
    Results of the evaluation conducted on the QA datasets.
 
-- **evaluation.ipynb**
+- **evaluation.ipynb: **
    Jupyter notebook containing scripts for evaluating the system's performance.
 
 ------
