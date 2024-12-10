@@ -56,5 +56,6 @@ agent_mode = ["baseline", "sys_api"][1]
 ### Notes
 
 - All conversations with the system are logged and stored in `./GUI/Conv_Log/main.json`.
+- The predefined daily tasks can be found at `../Test_Data/schedule.json`; The reminders are sent based on the **Date** and **Time**. For a demo run, add new tasks or update the existing task schedule's `date` up to date. 
 - If a user is inactive for more than 30 seconds, the current chat session is terminated. When the user sends a new message, a new chat session begins.
 - When the system triggers a proactive reminder, the current chat history is ended, and a new chat session is initiated specifically for the reminder.

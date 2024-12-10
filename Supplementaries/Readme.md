@@ -25,7 +25,7 @@ Although it is possible to convert the project to use raw Python libraries, this
 
 ### Running the Workflow
 1. **Load Workflow**: Drag and drop the `Memoraid Update&Query Workflow.json` from the `Supplementaries/Workflows` folder into the ComfyUI GUI. (PS: Please Use your own API key.)
-3. **Configure Database Directory**: Update the database directory paths as needed within the workflow. The personal profile file `Personal_info.json` and service information file `Service_info.json` can be found at `../Test_Data` and the corresponding path to those files should be adjsted based your environment settings.
+3. **Configure Database Directory**: Update the database directory paths as needed within the workflow. The personal profile file `Personal_info.json` and service information file `Service_info.json` can be found at `../Test_Data` and the corresponding path to those files should be adjsted based on your environment settings.
 4. **Run Workflow**: Click "Queue Prompt" on the right side of the screen to execute the workflow.
 
 ### API Setup for Local Access
