@@ -10,9 +10,27 @@ from utils import *
 from openai import OpenAI
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../Scheduler')))
 from scheduler import create_scheduler
+
+# two types of chat available, `pure_chatgpt` interacts directly with chatgpt, `sys_api` interacts
+# with our system
+agent_mode = ["pure_chatgpt", "sys_api"][1]
 #comfyUI API call
-import comfyUIAPI
-comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
+if agent_mode == "sys_api":
+    import comfyUIAPI
+    comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
+
+# chat type by agent mode
+def basic_chat_completion(api_key, openai_params, conv_prompt, agent_mode):
+    if agent_mode == "sys_api":
+        agent_res_msg = comfyAPI.call(
+                model_name="original_api",
+                messages=conv_prompt,
+                max_tokens=150,
+            )
+    elif agent_mode == "pure_chatgpt":
+         _,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, conv_prompt)
+    return agent_res_msg
+
 
 ##### temp model settings
 models = ["gpt-4o-2024-05-13", "gpt-4o-2024-08-06", "gpt-4o-2024-11-20", "gpt-4o-mini-2024-07-18"]
@@ -87,11 +105,12 @@ def server(input, output, session):
         ###################################################
         ### changed to comfy ui pipline API
         # _,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, current_conversation["messages"])
-        agent_res_msg = comfyAPI.call(
-            model_name="original_api",
-            messages=current_conversation["messages"],
-            max_tokens=150,
-        )
+        # agent_res_msg = comfyAPI.call(
+        #     model_name="original_api",
+        #     messages=current_conversation["messages"],
+        #     max_tokens=150,
+        # )
+        agent_res_msg = basic_chat_completion(api_key, openai_params, current_conversation["messages"], agent_mode=agent_mode)
         await chat.append_message(agent_res_msg)
         current_conversation['messages'].append({'role': 'assistant', 'content': agent_res_msg})
         last_interaction_time=time.time()

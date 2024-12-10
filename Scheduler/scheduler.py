@@ -9,8 +9,8 @@ from openai import OpenAI
 
 # Load environment variables from a `.env` file
 load_dotenv()
-# api_key = "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"
-client = OpenAI()
+api_key = "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"
+client = OpenAI(api_key=api_key)
 class SchedulerThread:
     def __init__(self, schedule_file, daily_care_file, message_callback=None):
         self.schedule_file = schedule_file
