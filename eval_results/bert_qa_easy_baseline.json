@@ -1,0 +1,352 @@
+[
+    {
+        "prob_id": 1,
+        "Q": "What is my occupation?",
+        "QD": "What did I use to work as?",
+        "A": "You are a retired engineer.",
+        "HA": "You used to work as an engineer, but now you are retired. You have so many wonderful interests like fishing, cooking, and traveling!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4621,
+        "hj_bert": 0.73105
+    },
+    {
+        "prob_id": 2,
+        "Q": "How old am I?",
+        "QD": "What\u2019s my age now?",
+        "A": "You are 68 years old.",
+        "HA": "You are 68 years old now, Samuel. It's wonderful to see that you have so many interests like fishing, cooking, and traveling. Is there anything specific you'd like to talk about today?\n\n",
+        "human_judge": 1,
+        "bertP": 0.3386,
+        "hj_bert": 0.6693
+    },
+    {
+        "prob_id": 3,
+        "Q": "What are my interests?",
+        "QD": "What do I like doing?",
+        "A": "You enjoy fishing, cooking, traveling, photography, gardening, reading historical novels, and woodworking.",
+        "HA": "You enjoy a variety of activities! Some of the things you like doing are fishing, cooking, traveling, photography, gardening, reading historical novels, and woodworking. Each of these hobbies brings you joy and allows you to express your creativity. If you'd like to talk about any of them, I'm here to listen!\n\n",
+        "human_judge": 1,
+        "bertP": 0.5603,
+        "hj_bert": 0.78015
+    },
+    {
+        "prob_id": 4,
+        "Q": "Who is my spouse?",
+        "QD": "I\u2019m married to who again?",
+        "A": "Your spouse is Lillian Carter.",
+        "HA": "You are married to Lillian Carter. She enjoys painting and often joins you on fishing trips. If you\u2019d like to reach her, you can call her at 555-9012.\n\n",
+        "human_judge": 1,
+        "bertP": 0.3966,
+        "hj_bert": 0.6983
+    },
+    {
+        "prob_id": 5,
+        "Q": "What is Lillian\u2019s contact number?",
+        "QD": "Lillian\u2019s phone, do you have it?",
+        "A": "Lillian\u2019s contact number is 555-9012.",
+        "HA": "I'm sorry, I couldn't find any information about Lillian's phone. However, I do have her contact number, which is 555-9012. Would you like to know more about Lillian or someone else?\n\n",
+        "human_judge": 0,
+        "bertP": 0.4659,
+        "hj_bert": 0.23295
+    },
+    {
+        "prob_id": 6,
+        "Q": "What hobby do Lillian and I share?",
+        "QD": "What do Lillian and I like to do together?",
+        "A": "Lillian often joins you on fishing trips.",
+        "HA": "You and Lillian enjoy spending time together painting, and you often go on fishing trips with her. It sounds like you both have some lovely activities that you share! If you'd like to talk about any specific memories or plans, I'm here to listen.\n\n",
+        "human_judge": 1,
+        "bertP": 0.4297,
+        "hj_bert": 0.71485
+    },
+    {
+        "prob_id": 7,
+        "Q": "Who is my primary doctor?",
+        "QD": "Who is my main health doctor?",
+        "A": "Your primary doctor is Dr. Olivia Moore.",
+        "HA": "Your main health doctor is Dr. Olivia Moore. She is a cardiologist and helps monitor your heart condition. You can reach her at 555-7890.\n\n",
+        "human_judge": 1,
+        "bertP": 0.558,
+        "hj_bert": 0.779
+    },
+    {
+        "prob_id": 8,
+        "Q": "What specialty does Dr. Olivia Moore have?",
+        "QD": "Dr. Moore, what does she specialize in?",
+        "A": "Dr. Olivia Moore is a cardiologist.",
+        "HA": "Dr. Olivia Moore is your primary doctor, and she specializes in cardiology. That means she focuses on heart health and monitors Samuel\u2019s heart condition. If you have any concerns about your heart, she would be the one to help you! If you'd like to know anything else, just let me know.\n\n",
+        "human_judge": 1,
+        "bertP": 0.3558,
+        "hj_bert": 0.6779
+    },
+    {
+        "prob_id": 9,
+        "Q": "What is Dr. Olivia Moore\u2019s contact number?",
+        "QD": "How to call Dr. Moore?",
+        "A": "Dr. Olivia Moore\u2019s contact number is 555-7890.",
+        "HA": "You can call Dr. Olivia Moore at 555-7890. She is your primary doctor and takes care of your heart condition. If you need anything else, just let me know!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4656,
+        "hj_bert": 0.7328
+    },
+    {
+        "prob_id": 10,
+        "Q": "Who visits me every weekend?",
+        "QD": "Who comes every weekend?",
+        "A": "Your son, David Carter, visits every weekend.",
+        "HA": "David comes every weekend to visit you. He plays the guitar and always enjoys spending time with you. If you want to talk to him, you can reach him at 555-3456.\n\n",
+        "human_judge": 1,
+        "bertP": 0.4668,
+        "hj_bert": 0.7334
+    },
+    {
+        "prob_id": 11,
+        "Q": "What instrument does David play?",
+        "QD": "What music thing does David play?",
+        "A": "David plays the guitar.",
+        "HA": "David plays the guitar. He visits you every weekend, and I hope you enjoy listening to him!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4162,
+        "hj_bert": 0.7081
+    },
+    {
+        "prob_id": 12,
+        "Q": "What is my daughter Sophia\u2019s occupation?",
+        "QD": "What does Sophia do for work?",
+        "A": "Sophia is a graphic designer.",
+        "HA": "Sophia works as a graphic designer, and she also shares a lovely interest in photography. If you\u2019d like to know more about her or anything else, just let me know!\n\n",
+        "human_judge": 1,
+        "bertP": 0.3667,
+        "hj_bert": 0.68335
+    },
+    {
+        "prob_id": 13,
+        "Q": "What shared interest do Sophia and I have?",
+        "QD": "What do Sophia and I both like?",
+        "A": "You and Sophia both enjoy photography.",
+        "HA": "I'm sorry, but I couldn't find information about what you and Sophia both like. Would you like to tell me more about what you enjoy, or is there something else you'd like to know?\n\n",
+        "human_judge": 0,
+        "bertP": 0.3529,
+        "hj_bert": 0.17645
+    },
+    {
+        "prob_id": 14,
+        "Q": "Who helps me with yard work?",
+        "QD": "Who often assists with the garden stuff?",
+        "A": "James O\u2019Brien, your friend, helps with yard work.",
+        "HA": "\"James O'Brien is a friend who often helps with yard work and enjoys gardening discussions. If you need assistance in the garden, he would be a great person to ask!\"\n\n",
+        "human_judge": 1,
+        "bertP": 0.5309,
+        "hj_bert": 0.76545
+    },
+    {
+        "prob_id": 15,
+        "Q": "What is James O\u2019Brien\u2019s hobby?",
+        "QD": "What does James like to do?",
+        "A": "James O\u2019Brien enjoys gardening.",
+        "HA": "James enjoys gardening discussions and helps with yard work. If you ever want to chat about gardening, he would love that! You can reach him at 555-6543.\n\n",
+        "human_judge": 1,
+        "bertP": 0.3755,
+        "hj_bert": 0.68775
+    },
+    {
+        "prob_id": 16,
+        "Q": "What is my brother Thomas\u2019 relation to me?",
+        "QD": "How is Thomas connected to me?",
+        "A": "Thomas Carter is your brother.",
+        "HA": "Thomas is your brother. He is a retired professor and enjoys woodworking with Samuel. If you'd like to reach him, you can contact him at 555-1111.\n\n",
+        "human_judge": 1,
+        "bertP": 0.4351,
+        "hj_bert": 0.71755
+    },
+    {
+        "prob_id": 17,
+        "Q": "What do Thomas and I enjoy doing together?",
+        "QD": "What do Thomas and I like to make together?",
+        "A": "You both enjoy woodworking.",
+        "HA": "You and Thomas enjoy woodworking together. It's a wonderful way to spend time and create something special! If you'd like to talk more about it, I'm here for you.\n\n",
+        "human_judge": 1,
+        "bertP": 0.4131,
+        "hj_bert": 0.70655
+    },
+    {
+        "prob_id": 18,
+        "Q": "Who is my longtime fishing companion?",
+        "QD": "Who goes fishing with me always?",
+        "A": "Your longtime fishing companion is Robert Harrison.",
+        "HA": "\"Your wonderful spouse, Lillian, often joins you on your fishing trips. She really enjoys painting too! You can reach her at 555-9012 if you want to chat with her about your next fishing adventure.\"\n\n",
+        "human_judge": 1,
+        "bertP": 0.4047,
+        "hj_bert": 0.70235
+    },
+    {
+        "prob_id": 19,
+        "Q": "Who organizes my family reunions?",
+        "QD": "Who takes care of the family gatherings?",
+        "A": "Your cousin, Martha Reynolds, organizes the family reunions.",
+        "HA": "I'm not sure exactly who takes care of the family gatherings, but I do know that your cousin Martha Reynolds organizes family reunions. She loves historical novels, which is a fun interest! If you have any other questions or need more help, just let me know!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4316,
+        "hj_bert": 0.7158
+    },
+    {
+        "prob_id": 20,
+        "Q": "Where is the library in the facility?",
+        "QD": "Where\u2019s the book place around here?",
+        "A": "The library is on the first floor, North Wing.",
+        "HA": "It sounds like you're looking for a place to find books! The best spot for that is the Library. It's located on the First Floor, North Wing. It's a lovely quiet zone where you can enjoy reading, and it\u2019s open from 8:00 AM to 8:00 PM. Would you like to know anything else?\n\n",
+        "human_judge": 1,
+        "bertP": 0.4301,
+        "hj_bert": 0.71505
+    },
+    {
+        "prob_id": 21,
+        "Q": "What are the library\u2019s operating hours?",
+        "QD": "When can I go to the library?",
+        "A": "The library is open from 8:00 AM to 8:00 PM.",
+        "HA": "You can go to the library any time between 8:00 AM and 8:00 PM. It's located on the First Floor, North Wing, and it's a quiet place to read or relax. Would you like to know anything else about the library?\n\n",
+        "human_judge": 1,
+        "bertP": 0.5232,
+        "hj_bert": 0.7616
+    },
+    {
+        "prob_id": 22,
+        "Q": "Where is the gymnasium located?",
+        "QD": "Where can I find the gym?",
+        "A": "The gymnasium is on the second floor, West Wing.",
+        "HA": "The gym is located on the Second Floor, in the West Wing. The room number is W-210. It has equipment like treadmills, bikes, and weights for you to use. If you need any help finding it, just let me know!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4657,
+        "hj_bert": 0.73285
+    },
+    {
+        "prob_id": 23,
+        "Q": "What equipment does the gymnasium have?",
+        "QD": "What kind of workout machines are there in the gym?",
+        "A": "The gymnasium has treadmills, bikes, and weights.",
+        "HA": "I'm sorry, but I couldn't find specific information about the workout machines in the gym. However, I can tell you that the gymnasium is located on the second floor in the West Wing, and it has equipment like treadmills, bikes, and weights. If you have any other questions or need help with something else, just let me know!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4168,
+        "hj_bert": 0.7084
+    },
+    {
+        "prob_id": 24,
+        "Q": "Where is the cafeteria located?",
+        "QD": "Where do we eat here in this place?",
+        "A": "The cafeteria is on the ground floor, Central Area.",
+        "HA": "We eat in the Cafeteria, which is located on the Ground Floor, in the Central Area. It offers meals and snacks, and it's open from 6:30 AM to 8:30 PM. Would you like to go there now?\n\n",
+        "human_judge": 1,
+        "bertP": 0.4926,
+        "hj_bert": 0.7463
+    },
+    {
+        "prob_id": 25,
+        "Q": "What meals does the cafeteria offer?",
+        "QD": "What kind of food is there in the cafeteria?",
+        "A": "The cafeteria offers meals and snacks.",
+        "HA": "I'm sorry, I couldn't find specific information about the food in the cafeteria. However, I can tell you that the cafeteria is located on the Ground Floor, in the Central Area, and it offers meals and snacks. It's open from 6:30 AM to 8:30 PM. Would you like to know more about something else?\n\n",
+        "human_judge": 1,
+        "bertP": 0.3833,
+        "hj_bert": 0.69165
+    },
+    {
+        "prob_id": 26,
+        "Q": "Where is the swimming pool located?",
+        "QD": "Where\u2019s the place to swim inside here?",
+        "A": "The swimming pool is on the ground floor, South Wing.",
+        "HA": "The place to swim inside here is the Swimming Pool. It is located on the Ground Floor, in the South Wing. The pool is open from 9:00 AM to 6:00 PM, and there is a lifeguard on duty for your safety. Enjoy your time swimming!\n\n",
+        "human_judge": 1,
+        "bertP": 0.5144,
+        "hj_bert": 0.7572
+    },
+    {
+        "prob_id": 27,
+        "Q": "What are the swimming pool\u2019s operating hours?",
+        "QD": "When can I go to the pool?",
+        "A": "The swimming pool is open from 9:00 AM to 6:00 PM.",
+        "HA": "The swimming pool is open from 9:00 AM to 6:00 PM. It's located in the Ground Floor, South Wing, and there's a lifeguard on duty to keep everyone safe. Would you like to know anything else?\n\n",
+        "human_judge": 1,
+        "bertP": 0.5592,
+        "hj_bert": 0.7796000000000001
+    },
+    {
+        "prob_id": 28,
+        "Q": "Where is the art studio located?",
+        "QD": "Where can I paint here?",
+        "A": "The art studio is on the third floor, East Wing.",
+        "HA": "You can paint in the Art Studio! It's located on the Third Floor, East Wing, in room E-305. It hosts art classes twice a week, so it's a great place to explore your creativity. Would you like to know more about it?\n\n",
+        "human_judge": 1,
+        "bertP": 0.4925,
+        "hj_bert": 0.74625
+    },
+    {
+        "prob_id": 29,
+        "Q": "How often are art classes held in the studio?",
+        "QD": "When do they have art lessons?",
+        "A": "Art classes are held twice a week.",
+        "HA": "I'm sorry, I couldn't find specific times for the art lessons. However, I can tell you that there is an Art Studio located on the third floor in the East Wing, and it hosts art classes twice a week. If you'd like, I can help you find out more about the schedule!\n\n",
+        "human_judge": 0,
+        "bertP": 0.3949,
+        "hj_bert": 0.19745
+    },
+    {
+        "prob_id": 30,
+        "Q": "When was I diagnosed with Alzheimer\u2019s disease?",
+        "QD": "When was it that they said I have Alzheimer\u2019s?",
+        "A": "You were diagnosed with Alzheimer\u2019s disease on 2020-08-15.",
+        "HA": "You were diagnosed with Alzheimer's Disease on August 15, 2020. At that time, it was noted that you were in the mild cognitive impairment stage. If you have any other questions or need more information, I'm here to help!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4987,
+        "hj_bert": 0.74935
+    },
+    {
+        "prob_id": 31,
+        "Q": "What stage of Alzheimer\u2019s am I currently in?",
+        "QD": "What stage is my memory problem at now?",
+        "A": "You are in the mild cognitive impairment stage.",
+        "HA": "Your memory problem is currently at the mild cognitive impairment stage of Alzheimer's Disease. This means you may be experiencing some difficulties with memory and thinking, but it's important to remember that you're not alone in this. If you have any questions or need support, I'm here to help you.\n\n",
+        "human_judge": 1,
+        "bertP": 0.4602,
+        "hj_bert": 0.7301
+    },
+    {
+        "prob_id": 32,
+        "Q": "What condition am I managing with medication and diet?",
+        "QD": "What\u2019s the health issue I\u2019m controlling with medicine and meals?",
+        "A": "You are managing Type 2 Diabetes with medication and diet.",
+        "HA": "You are controlling Type 2 Diabetes with medicine and meals. This condition was diagnosed on April 18, 2015, and it\u2019s managed through a careful diet and medication. If you have any more questions or need help with something else, feel free to ask!\n\n",
+        "human_judge": 1,
+        "bertP": 0.5092,
+        "hj_bert": 0.7545999999999999
+    },
+    {
+        "prob_id": 33,
+        "Q": "What therapy am I undergoing for chronic back pain?",
+        "QD": "What\u2019s the treatment I do for my back pain?",
+        "A": "You are undergoing physiotherapy sessions.",
+        "HA": "I'm here to help you with your back pain. You have been diagnosed with chronic back pain, and you are currently undergoing physiotherapy sessions. It\u2019s important to continue those sessions, as they can really help with your pain. If you have any specific concerns or questions about your treatment, please feel free to ask!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4841,
+        "hj_bert": 0.74205
+    },
+    {
+        "prob_id": 34,
+        "Q": "What medical device do I use for sleep apnea?",
+        "QD": "What\u2019s the equipment I use for breathing at night?",
+        "A": "You use a CPAP machine for sleep apnea.",
+        "HA": "It sounds like you're asking about the equipment that helps you breathe at night. You use a CPAP machine for your sleep apnea. This machine helps keep your airway open while you sleep, making it easier for you to breathe. If you have more questions or need help with something else, feel free to ask!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4948,
+        "hj_bert": 0.7474000000000001
+    },
+    {
+        "prob_id": 35,
+        "Q": "What joints are primarily affected by my arthritis?",
+        "QD": "Where does my arthritis hurt the most?",
+        "A": "Your arthritis primarily affects your knees and hands.",
+        "HA": "I'm sorry, I couldn't find specific details about where your arthritis hurts the most. However, I do know that it primarily affects your knees and hands. If you\u2019d like, we can talk more about how you\u2019re feeling or any other questions you have!\n\n",
+        "human_judge": 1,
+        "bertP": 0.4127,
+        "hj_bert": 0.70635
+    }
+]
