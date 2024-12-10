@@ -32,19 +32,22 @@ To deploy this GUI in your environment, follow these steps:
 
 In the [app.py](./app.py) file, you can choose between two modes of interaction for the agent:
 
-- **`pure_chatgpt`**: Interacts directly with ChatGPT. **(Not required to set up ComfyUI API)**
+- **`baseline`**: Interacts directly with ChatGPT using our baseline settings. **(Not required to set up ComfyUI API)**
 - **`sys_api`**: Interacts with our system.
 
 You can select the desired mode by modifying the `agent_mode` variable in the script. For example, to use the **`sys_api`** mode, set the index to `[1]` as follows:
 
 ```python
-agent_mode = ["pure_chatgpt", "sys_api"][1]
+agent_mode = ["baseline", "sys_api"][1]
 ```
 
 **Note:**
- Users can access external knowledge beyond the RAG system through ChatGPT. This feature is only available in the **`pure_chatgpt`** mode, as the accuracy of the information cannot be validated.
+ Users can access external knowledge beyond the RAG system through ChatGPT. This feature is only available in the **`baseline`** mode, as the accuracy of the information cannot be validated.
 
-![External Knowledge](../imgs/UI_ext_kw.png)
+<div align="center">
+    <img src="./imgs/UI_ext_kw.png" alt="External Knowledge" width="60%"/>
+</div>
+<!-- ![External Knowledge](../imgs/UI_ext_kw.png) -->
 ------
 
 
