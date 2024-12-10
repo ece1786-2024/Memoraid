@@ -16,6 +16,7 @@ To deploy this GUI in your environment, follow these steps:
    ```bash
    pip install -r PATH_TO_requirements.txt
    ```
+   Note: Python 3.10 is used for this project.
 
 2. **Start the Web App**
 
@@ -48,7 +49,8 @@ agent_mode = ["baseline", "sys_api"][1]
     <img src="../imgs/UI_ext_kw.png" alt="External Knowledge" width="60%"/>
 </div>
 <!-- ![External Knowledge](../imgs/UI_ext_kw.png) -->
-------
+
+---
 
 
 ### Notes

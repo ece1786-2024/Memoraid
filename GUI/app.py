@@ -19,7 +19,6 @@ if agent_mode == "sys_api":
     import comfyUIAPI
     comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
 
-
 ##### temp model settings
 models = ["gpt-4o-2024-05-13", "gpt-4o-2024-08-06", "gpt-4o-2024-11-20", "gpt-4o-mini-2024-07-18"]
 openai_params = {"model":models[-1],"temperature":0, "max_tokens":300, "top_p":0.5}
@@ -27,7 +26,6 @@ api_key = "sk-proj-a1rJBUBaAvngAZ439-ArfMIathRmPcUwPeuj6_WRGGPAzWHLQcPa4FJd35n4a
 ## Conversation log path
 MAIN_CONVLOG_PATH  = "./Conv_Log/main.json"
 os.makedirs(os.path.dirname(MAIN_CONVLOG_PATH), exist_ok=True)
-
 
 ## set up user profile path
 TEST_DATA_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__),"../Test_Data"))
@@ -50,7 +48,6 @@ Answer the following question:
 """
 sys_msg = format_msg_role("system", sys_prompt)
 
-
 # chat type by agent mode
 def basic_chat_completion(api_key, openai_params, conv_prompt, agent_mode):
     if agent_mode == "sys_api":
@@ -63,7 +60,6 @@ def basic_chat_completion(api_key, openai_params, conv_prompt, agent_mode):
          temp_conv_prompt = [sys_msg] + conv_prompt
          _,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, temp_conv_prompt)
     return agent_res_msg
-
 
 #
 ######## web ui setup
