@@ -45,7 +45,7 @@ agent_mode = ["baseline", "sys_api"][1]
  Users can access external knowledge beyond the RAG system through ChatGPT. This feature is only available in the **`baseline`** mode, as the accuracy of the information cannot be validated.
 
 <div align="center">
-    <img src="./imgs/UI_ext_kw.png" alt="External Knowledge" width="60%"/>
+    <img src="../imgs/UI_ext_kw.png" alt="External Knowledge" width="60%"/>
 </div>
 <!-- ![External Knowledge](../imgs/UI_ext_kw.png) -->
 ------
