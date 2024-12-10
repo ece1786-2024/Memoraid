@@ -64,5 +64,6 @@ Both components must be set up correctly to access all features provided by the 
 ## Acknowledgements
 
 This project was developed as part of the **ECE1786** course. We extend our gratitude to the teaching team for providing such a wonderful and enriching learning experience.
+
 ---
 
