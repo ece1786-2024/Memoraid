@@ -7,7 +7,42 @@
 - **Personalized Assistance**: Accurate responses tailored to the user’s condition.
 - **Cost-effective Caregiving**: Aiming to reduce the burdon on caregiver with low cost.
 
+---
+
 ## Demo
-For a demo in GUI, please follow the set up instruction for
-[GUI](GUI/ReadMe.md)
-[System](Supplementaries/Readme.md)
+To experience the full capabilities of **Memoraid**, follow the setup instructions for both the **GUI** and the **ComfyUI** components.
+
+### Setup Instructions
+
+1. **[GUI Setup](GUI/ReadMe.md)**
+   - Includes the user interface (UI) and reminder system.
+2. **[ComfyUI Setup](Supplementaries/Readme.md)**
+   - Enables passive interaction capabilities.
+
+Both components must be set up correctly to access all features provided by the demo. 
+
+---
+
+## Repository Overview
+
+This section provides an overview of the key folders and files in the repository, along with their purposes and contents.
+
+- **Supplementaries**
+   Implementation of passive interaction as an API.
+   Contains prompts used for agents in the passive interaction system.
+- **Scheduler**
+   Implementation of proactive interaction.
+   Includes prompts used for agents in this system.
+- **GUI**
+   Shiny implementation of the chat user interface.
+- **Test_Data**
+   Contains synthetic QA datasets and corresponding user profiles.
+   Includes prompts used to generate the QA datasets.
+- **eval_results**
+   Results of the evaluation conducted on the QA datasets.
+
+- **evaluation.ipynb**
+   Jupyter notebook containing scripts for evaluating the system's performance.
+
+------
+
