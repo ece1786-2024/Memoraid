@@ -38,7 +38,9 @@ Our system supports two types of patient interactions:
     – Proactive: The system proactively sends reminders based on a predefined schedule (i.e. prompting the patient to follow therapy routine)
 
 ![passive interaction](imgs/passive_chat.png)
+ *Figure 1: Passive interaction workflow.*
 ![proactive interaction](imgs/reminder.png)
+ *Figure 2: Proactive interaction workflow.*
 ---
 
 ## Demo
