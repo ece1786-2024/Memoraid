@@ -14,9 +14,9 @@ To experience the full capabilities of **Memoraid**, follow the setup instructio
 
 ### Setup Instructions
 
-1. **[GUI Setup](GUI/ReadMe.md)**
+1. **[GUI Setup](GUI/)**
    - Includes the user interface (UI) and reminder system.
-2. **[ComfyUI Setup](Supplementaries/Readme.md)**
+2. **[ComfyUI Setup](Supplementaries/)**
    - Enables passive interaction capabilities.
 
 Both components must be set up correctly to access all features provided by the demo. 
