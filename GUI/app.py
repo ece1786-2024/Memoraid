@@ -10,16 +10,17 @@ from utils import *
 from openai import OpenAI
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../Scheduler')))
 from scheduler import create_scheduler
-#comfyUI API的调用 / comfyUI API call
+#comfyUI API call
 import comfyUIAPI
 #comfyAPI = comfyUIAPI(base_url="http://127.0.0.1:8187/v1/chat/completions", api_key="testKey")
 
 ##### temp model settings
 models = ["gpt-4o-2024-05-13", "gpt-4o-2024-08-06", "gpt-4o-2024-11-20", "gpt-4o-mini-2024-07-18"]
 openai_params = {"model":models[-1],"temperature":0, "max_tokens":300, "top_p":0.5}
-api_key = "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"  # Replace with your key
+api_key = "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"
 ## Conversation log path
 MAIN_CONVLOG_PATH  = "./Conv_Log/main.json"
+os.makedirs(os.path.dirname(MAIN_CONVLOG_PATH), exist_ok=True)
 
 ######## web ui setup
 app_ui = ui.page_fluid(
@@ -57,8 +58,8 @@ def server(input, output, session):
         """
         asyncio.run_coroutine_threadsafe(handle_reminder_message(msg), loop)
     scheduler = create_scheduler(
-    "JSON files/schedule.json", 
-    "JSON files/daily_care.json",
+    "../Test_Data/schedule.json", 
+    "../Test_Data/daily_care.json",
     callback_bridge
     )
     
@@ -85,14 +86,14 @@ def server(input, output, session):
         # Generate res with base gpt model
         ###################################################
         ### changed to comfy ui pipline API
-        #_,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, current_conversation["messages"])
+        _,agent_res_msg = basic_openai_chat_completion(api_key, openai_params, current_conversation["messages"])
         # agent_res_msg = comfyAPI.call(
         #     model_name="original_api",
         #     messages=current_conversation["messages"],
         #     max_tokens=150,
         # )
-        #await chat.append_message(agent_res_msg)
-        #current_conversation['messages'].append({'role': 'assistant', 'content': agent_res_msg})
+        await chat.append_message(agent_res_msg)
+        current_conversation['messages'].append({'role': 'assistant', 'content': agent_res_msg})
         last_interaction_time=time.time()
 
     # Background task to send reminders for scheduled events

@@ -83,6 +83,13 @@
           "details" : ["Vitamin D", "Blood Pressure Pill", "Pain Relief"],
           "dosage": [1, 1, 1],
           "time": "23:46"
+        },
+        {
+          "id": 99,
+          "type": "Medication",
+          "details" : ["Vitamin D", "Blood Pressure Pill", "Pain Relief"],
+          "dosage": [1, 1, 1],
+          "time": "03:16"
         }
       ]
     }
